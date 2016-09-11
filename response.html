@@ -1,0 +1,1705 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Tryhard (445|548) - Война племён - Мир 42</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<link id="favicon" rel="shortcut icon"  href="/favicon.ico" />
+
+	<link rel="stylesheet" type="text/css" href="https://dsru.innogamescdn.com/assets/ru42/9ce6c24a48f7db52838d06a64b18105e/merged/game.css" />
+
+			<link rel="stylesheet" type="text/css" href="https://dsru.innogamescdn.com/assets/ru42/0b03ef1dbdc1718df627216a8c969a2d/css/game/village_target.css" />
+
+	
+	<script type="text/javascript" src="https://dsru.innogamescdn.com/assets/ru42/bfa8b5bd332fca3c21ac56d014233b87/merged/game.js"></script>
+
+			<script type="text/javascript" src="https://dsru.innogamescdn.com/assets/ru42/12175b4fe9bc8411ed08a6fdb6561a45/js/game/TroopTemplates.js"></script>
+
+			<script type="text/javascript" src="https://dsru.innogamescdn.com/assets/ru42/4050240a4d3b668edad06598f9586ab0/js/game/TargetSelection.js"></script>
+
+	
+	
+	
+	<script type="text/javascript">
+        //<![CDATA[
+        var sds = false;
+		var image_base = "https://dsru.innogamescdn.com/8.53/30447/graphic/";
+		var mobile = false;
+		var mobile_on_normal = false;
+        var mobiledevice = false;
+		var premium = true;
+		var server_utc_diff = 10800;
+
+		TribalWars.updateGameData({"player":{"id":"1720916","name":"MrZhigan","ally":"271","sitter":"0","sleep_start":"0","sitter_type":"normal","sleep_end":"0","sleep_last":"0","interstitial":"0","email_valid":"1","villages":"1","incomings":"0","supports":"0","knight_location":"5562","knight_unit":"1802462487","rank":474,"points":"2168","date_started":"1471042077","is_guest":"0","birthdate":"0000-00-00","quest_progress":"0","premium":true,"account_manager":false,"farm_manager":false,"points_formatted":"2<span class=\"grey\">.<\/span>168","rank_formatted":"474","pp":"248","new_ally_application":"0","new_ally_invite":"0","new_buddy_request":"0","new_daily_bonus":"0","new_forum_post":"0","new_igm":"0","new_items":"0","new_report":"0","fire_pixel":"0","new_quest":"1"},"village":{"id":5562,"name":"Tryhard","wood_prod":0.46037010738711,"stone_prod":0.42905241300704,"iron_prod":0.27267101221283,"storage_max":50675,"pop_max":3569,"wood_float":7915.5778719358,"stone_float":14704.776656158,"iron_float":7223.1990398258,"wood":7916,"stone":14705,"iron":7223,"pop":2855,"x":445,"y":548,"trader_away":26,"bonus_id":null,"bonus":{"wood":1.47,"stone":1.37,"iron":1.37},"buildings":{"village":"5562","main":"20","farm":"18","storage":"20","place":"1","barracks":"8","church":"0","church_f":"1","smith":"5","wood":"25","stone":"25","iron":"22","market":"14","stable":"3","wall":"10","garage":"0","hide":"4","snob":"0","statue":"1","watchtower":"0"},"player_id":"1720916","modifications":0,"last_res_tick":1472812500118,"res":[7916,0.46037010738711,14705,0.42905241300704,7223,0.27267101221283,50675,2855,3569],"coord":"445|548","is_farm_upgradable":true},"nav":{"parent":2},"link_base":"\/game.php?village=5562&amp;screen=","link_base_pure":"\/game.php?village=5562&screen=","csrf":"7e4abfa8","world":"ru42","market":"ru","RTL":false,"version":"30447 8.53","majorVersion":"8.53","screen":"place","mode":null,"device":"desktop","pregame":false,"time_generated":1472812500118});
+		var csrf_token = '7e4abfa8';
+			
+		UI.AutoComplete.url = '/game.php?village=5562&screen=api&ajaxaction=autocomplete&&h=7e4abfa8';
+		ScriptAPI.url = '/game.php?village=5562&screen=api&ajax=save_script&';
+		ScriptAPI.version = parseFloat(game_data.majorVersion);
+
+		
+		var userCSS = false;
+		
+		var isIE7 = false;
+
+		var topmenuIsAlwaysVisible = false;
+					topmenuIsAlwaysVisible = true;
+		
+				VillageContext._urls.overview = '/game.php?village=5562&screen=overview&village=__village__&';
+		VillageContext._urls.info = '/game.php?village=5562&screen=info_village&id=__village__&';
+		VillageContext._urls.fav = '/game.php?village=5562&screen=info_village&id=__village__&ajaxaction=add_target&json=1&&h=7e4abfa8';
+		VillageContext._urls.unfav = '/game.php?village=5562&screen=info_village&id=__village__&ajaxaction=del_target&json=1&&h=7e4abfa8';
+		VillageContext._urls.claim = '/game.php?village=5562&screen=info_village&id=__village__&ajaxaction=toggle_reserve_village&json=1&&h=7e4abfa8';
+		VillageContext._urls.market = '/game.php?village=5562&screen=market&mode=send&target=__village__&';
+		VillageContext._urls.place = '/game.php?village=5562&screen=place&target=__village__&';
+		VillageContext._urls.recruit = '/game.php?village=5562&screen=train&village=__village__&';
+		VillageContext._urls.map = '/game.php?village=5562&screen=map&beacon=1&id=__village__&';
+		VillageContext._urls.unclaim = VillageContext._urls.claim;
+        VillageContext.claim_enabled = true;
+        VillageContext.igm_enabled = true;
+        VillageContext.send_troops_enabled = true;
+        VillageContext.send_attack_disabled = false;
+				
+
+		
+		TribalWars._settings = {"sound":0,"map_casual_hide":1,"map_show_watchtower":0,"bn_attack":1,"bn_warehouse":1,"bn_mail":1,"bn_building":1,"bn_suppress_prompt":1,"inline_notification_building":1,"chat_enabled":1,"chat_sound_enabled":1};
+
+		$(document).ready( function() {
+			UI.ToolTip( $( '.group_tooltip' ), { delay: 1000 } );
+			VillageContext.init();
+						Quests.setQuestData({"5090":{"id":5090,"goals_completed":1,"goals_total":7,"opened":true,"finished":false,"can_be_skipped":false,"title":"\u041f\u0443\u0442\u044c \u0437\u0430\u0432\u043e\u0435\u0432\u0430\u043d\u0438\u0439 III","icon":"buildings\/snob.png","state":"active"},"5120":{"id":5120,"goals_completed":3,"goals_total":7,"opened":true,"finished":false,"can_be_skipped":false,"title":"\u041f\u043e\u0441\u0442\u0440\u043e\u0439\u043a\u0430 \u0441\u0442\u043e\u043b\u0438\u0446\u044b V","icon":"buildings\/main.png","state":"active"},"7005":{"id":7005,"goals_completed":0,"goals_total":3,"opened":true,"finished":false,"can_be_skipped":false,"title":"\u042d\u043a\u0441\u043f\u043e\u0440\u0442\u043d\u043e\u0435 \u043e\u0431\u0443\u0447\u0435\u043d\u0438\u0435","icon":"unit\/unit_knight.png","state":"active"}});
+					});
+
+		
+		//]]>
+	</script>
+	<!--[if IE 8]>
+		<style type="text/css">
+			/*
+				Workaround for IE8 textarea scroll bug, see
+
+				http://grantovich.net/posts/2009/06/that-weird-ie8-textarea-bug/
+
+				You also need to set an absolute height for the element. since this depends
+				on the location of the textarea, use an element style.
+			*/
+			textarea.ie8scrollfix { width: 300px !important; min-width: 98%; max-width: 98%;}
+					</style>
+	<![endif]-->
+
+	</head><body id="ds_body" class="desktop   " dir="ltr"
+      >
+	
+
+	<div class="top_bar">
+		<div class="bg_left"> </div>
+		<div class="bg_right"> </div>
+	</div>
+	<div class="top_shadow"> </div>
+	<div class="top_background"> </div>
+    <div class="questlog_placeholder">&nbsp;</div>
+
+	<table id="main_layout" cellspacing="0">
+		<tr style="height: 48px;">
+			<td class="topbar left fixed"></td>
+			<td class="topbar center fixed">
+				<div id="topContainer">
+					<table id="topTable" style="text-align: center;" cellspacing="0">
+						<tr>
+							<td style="text-align: center;">
+								<table class="menu nowrap" style="white-space: nowrap; ">
+									<tr id="menu_row">
+										<td class="menu-side"></td>
+										<td class="menu-item"><a href="/game.php?village=5562&amp;screen=overview_villages" >Обзор деревень</a><table cellspacing="0" class="menu_column"><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=overview_villages&amp;mode=combined">Комбинированный</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=overview_villages&amp;mode=prod">Производство</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=overview_villages&amp;mode=trader">Обозы</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=overview_villages&amp;mode=units">Войска</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=overview_villages&amp;mode=commands">Приказы</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=overview_villages&amp;mode=incomings">Манёвры</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=overview_villages&amp;mode=buildings">Здания</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=overview_villages&amp;mode=tech">Исследовать</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=overview_villages&amp;mode=groups">Группы</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=accountmanager">Аккаунт менеджер</a></td></tr><tr><td class="bottom"><div class="corner"></div><div class="decoration"></div></td></tr></table></td>
+										<td id="header_menu_link_map" class="menu-item tooltip-delayed" title="Карта<br/> :: горячая клавиша: &lt;b&gt;m&lt;/b&gt;"><a href="/game.php?village=5562&amp;screen=map">Карта</a></td>
+										<td class="menu-item">
+											<a href="/game.php?village=5562&amp;screen=report">
+												<span id="new_report" class="icon header new_report_faded"></span>
+												Отчёты
+												<span id="menu_report_count" class="badge badge-report"></span>
+											</a>
+											<table cellspacing="0" class="menu_column"><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=report&amp;mode=all">Все<span class="badge badge-report"> </span></a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=report&amp;mode=attack">Атаки</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=report&amp;mode=defense">Защита</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=report&amp;mode=support">Подкрепления</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=report&amp;mode=trade">Торговля</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=report&amp;mode=event">События</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=report&amp;mode=other">Разное</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=report&amp;mode=forwarded">Пересылки</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=report&amp;mode=public">Опубликованные</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=report&amp;mode=filter">Фильтр</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=report&amp;mode=groups">Папки</a></td></tr><tr><td class="bottom"><div class="corner"></div><div class="decoration"></div></td></tr></table>
+										</td>
+
+                                        <!-- mail -->
+                                                                                    <td class="menu-item">
+                                                <a href="/game.php?village=5562&amp;screen=mail">
+                                                    <span id="new_mail" class="icon header new_mail_faded"></span>
+                                                    Сообщения
+                                                    <span id="menu_mail_count" class="badge badge-mail"></span>
+                                                </a>
+                                                <table cellspacing="0" class="menu_column"><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=mail&amp;mode=in">Сообщения<span class="badge badge-mail"> </span></a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=mail&amp;mode=mass_out">Групповые рассылки</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=mail&amp;mode=new">Написать письмо</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=mail&amp;mode=address">Адресная книга</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=mail&amp;mode=groups">Папки</a></td></tr><tr><td class="bottom"><div class="corner"></div><div class="decoration"></div></td></tr></table>
+                                            </td>
+                                        
+																					<td>
+																									<a class="manager_icon" style="background-image:url('https://dsru.innogamescdn.com/8.53/30447/graphic/icons/farm_assistent.png')" href="/game.php?village=5562&amp;screen=am_farm" title="Помощник по Грабежам">&nbsp;</a>
+																																					<a class="manager_icon" style="background-image:url('https://dsru.innogamescdn.com/8.53/30447/graphic/icons/account_manager.png')" href="/game.php?village=5562&amp;screen=accountmanager" title="Аккаунт менеджер">&nbsp;</a>
+																							</td>
+																				<td class="menu-item lpad"> </td>
+																				<td class="menu-item" id="topdisplay">
+											<div class="bg">
+												<a href="/game.php?village=5562&amp;screen=ranking"><img src="https://dsru.innogamescdn.com/8.53/30447/graphic/compete/indicator.png" title="" alt="" class="" /> Рейтинг <img src="https://dsru.innogamescdn.com/8.53/30447/graphic/compete/indicator.png" title="" alt="" class="" /></a>
+												<div class="rank">(<span id="rank_rank">474</span>.|<span id="rank_points">2<span class="grey">.</span>168</span> P)</div>
+												<table cellspacing="0" class="menu_column"><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=ranking&amp;mode=ally">Племена</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=ranking&amp;mode=player">Игроки</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=ranking&amp;mode=dominance">Доминирование в мире</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=ranking&amp;mode=con_ally">Племена континента</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=ranking&amp;mode=con_player">Игроки континента</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=ranking&amp;mode=kill_ally">Поверженные противники (племя)</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=ranking&amp;mode=kill_player">Поверженные противники</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=ranking&amp;mode=awards">Достижения</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=ranking&amp;mode=in_a_day">За день</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=ranking&amp;mode=wars">Войны</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=ranking&amp;mode=compete">Состязания <img src="https://dsru.innogamescdn.com/8.53/30447/graphic/compete/indicator.png" title="" alt="" class="" /></a></td></tr><tr><td class="bottom"><div class="corner"></div><div class="decoration"></div></td></tr></table>
+											</div>
+										</td>
+																				<td class="menu-item rpad"> </td>
+
+                                        <!-- tribe -->
+                                                                                    <td class="menu-item">
+                                                <a href="/game.php?village=5562&amp;screen=ally">
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                                    Племя
+                                                    <span id="menu_counter_ally" class="badge badge-ally-forum"></span>
+                                                </a>
+                                                                                                    <div class="buttonicon">
+                                                        <a href="/game.php?village=5562&amp;screen=ally&amp;mode=forum"  style="display:inline"><span id="tribe_forum_indicator" class="icon header no_new_post" title="Нет новых сообщений на форуме племени"></span></a>
+                                                    </div>
+                                                                                                <table cellspacing="0" class="menu_column"><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=ally&amp;mode=overview">Обзор<span class="badge badge-ally-invite"> </span></a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=ally&amp;mode=properties">Свойства</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=ally&amp;mode=members">Участники</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=ally&amp;mode=contracts">Дипломатия</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=ally&amp;mode=tribalwars">Войны</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=ally&amp;mode=reservations">Система бронирования</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=ally&amp;mode=forum">Форум<span class="badge badge-ally-forum-post"> </span></a></td></tr><tr><td class="bottom"><div class="corner"></div><div class="decoration"></div></td></tr></table>                                            </td>
+                                        
+										<td class="menu-item">
+											<a href="/game.php?village=5562&amp;screen=info_player">
+												Профиль <span id="menu_counter_profile" class="badge"></span>
+											</a>
+											<table cellspacing="0" class="menu_column"><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=info_player">MrZhigan</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=inventory">Инвентарь<span class="badge badge-inventory"> </span></a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=info_player&amp;mode=awards">Достижения</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=info_player&amp;mode=stats_own">Статистика</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=buddies">Друзья<span class="badge badge-buddy"> </span></a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=mentor">Система Менторов</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=info_player&amp;mode=block">Список заблокированных</a></td></tr><tr><td class="bottom"><div class="corner"></div><div class="decoration"></div></td></tr></table>
+										</td>
+										<td class="menu-item">
+											<a href="/game.php?village=5562&amp;screen=premium">
+												<span class="coinbag coinbag-header"></span>&nbsp;<span id="premium_points">248</span>
+												<span id="premium_points_buy"></span>
+											</a>
+											<table cellspacing="0" class="menu_column"><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=premium&amp;mode=use">Активация</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=premium&amp;mode=premium" class="premium-buy">Покупка</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=premium&amp;mode=transfer">Перевод</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=premium&amp;mode=log">Протокол очков</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=premium&amp;mode=feature_log">Протокол функций</a></td></tr><tr><td class="bottom"><div class="corner"></div><div class="decoration"></div></td></tr></table>
+										</td>
+										<td class="menu-item"><a href="/game.php?village=5562&amp;screen=settings">Настройки</a><table cellspacing="0" class="menu_column"><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=settings&amp;mode=settings">Настройки игры</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=settings&amp;mode=account">Аккаунт</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=settings&amp;mode=move">Начать заново</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=settings&amp;mode=transfer">Перенос в Casual</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=settings&amp;mode=quickbar">Закладки</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=settings&amp;mode=share">Общее соединение</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=settings&amp;mode=vacation">Присмотр за аккаунтом</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=settings&amp;mode=logins">Входы</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=settings&amp;mode=poll">Опросы</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=settings&amp;mode=ref&amp;source=settings_menu">Пригласить друзей</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=settings&amp;mode=push">Push уведомления</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=settings&amp;mode=notify">Оповещения по электронной почте</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=settings&amp;mode=browser_notifications">Браузерные Уведомления</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=settings&amp;mode=command_sharing">Публикация приказов</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=settings&amp;mode=village_notes_sharing">Публикация заметок деревни</a></td></tr><tr><td class="menu-column-item"><a href="/game.php?village=5562&amp;screen=settings&amp;mode=ticket" target="_blank">Поддержка</a></td></tr><tr><td class="bottom"><div class="corner"></div><div class="decoration"></div></td></tr></table></td>
+										<td class="menu-side"><img src="https://dsru.innogamescdn.com/8.53/30447/graphic/loading.gif" id="loading_content" style="display: none" alt="" class="" /></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+
+                    				</div>
+			</td>
+			<td class="topbar right fixed"> </td>
+
+		</tr>
+		<tr class="shadedBG">
+
+			<td class="bg_left">
+				<div class="bg_left"> </div>
+			</td>
+
+			<td class="maincell" style="width: 850px;">
+
+
+							<div style="position:fixed;">
+					<div id="questlog" class="questlog">
+					</div>
+				</div>
+			
+			
+			<br class="newStyleOnly" />
+	        			<table id="quickbar_outer" align="center" width="100%" cellspacing="0" >
+	            <tr>
+	                <td>
+						<table id="quickbar_inner" style="border-collapse: collapse;" width="100%">
+							<tr class="topborder">
+								<td class="left"> </td>
+								<td class="main"> </td>
+								<td class="right"> </td>
+							</tr>
+	                        <tr>
+								<td class="left"> </td>
+								<td id="quickbar_contents" class="main">
+									<ul class="menu quickbar">
+										
+																					                                                 
+												<li  class="quickbar_item" data-hotkey="1">
+															<span>
+																<a class="quickbar_link" data-hash="7843128499689e43baba42bab06dc4fa" href="/game.php?village=5562&amp;screen=main"  >
+																	<img src="https://dsru.innogamescdn.com/8.53/30447/graphic//buildings/main.png" alt="Ратуша" />Ратуша
+																</a>
+															</span>
+												</li>
+                                                																																                                                 
+												<li  class="quickbar_item" data-hotkey="2">
+															<span>
+																<a class="quickbar_link" data-hash="d19a9592b32578e63c1cb2dffa78cbe2" href="/game.php?village=5562&amp;screen=train"  >
+																	<img src="https://dsru.innogamescdn.com/8.53/30447/graphic//buildings/barracks.png" alt="Призыв" />Призыв
+																</a>
+															</span>
+												</li>
+                                                																																                                                 
+												<li  class="quickbar_item" data-hotkey="3">
+															<span>
+																<a class="quickbar_link" data-hash="f4b287bc5798b92c076b51b0df6a3ab0" href="/game.php?village=5562&amp;screen=church"  >
+																	<img src="https://dsru.innogamescdn.com/8.53/30447/graphic//buildings/church.png" alt="Церковь" />Церковь
+																</a>
+															</span>
+												</li>
+                                                																																                                                 
+												<li  class="quickbar_item" data-hotkey="4">
+															<span>
+																<a class="quickbar_link" data-hash="8708802b51699a4f36571e77aedce6e2" href="/game.php?village=5562&amp;screen=snob"  >
+																	<img src="https://dsru.innogamescdn.com/8.53/30447/graphic//buildings/snob.png" alt="Особняк" />Особняк
+																</a>
+															</span>
+												</li>
+                                                																																                                                 
+												<li  class="quickbar_item" data-hotkey="5">
+															<span>
+																<a class="quickbar_link" data-hash="3f69e37073fa8329448b02773dadd5ef" href="/game.php?village=5562&amp;screen=smith"  >
+																	<img src="https://dsru.innogamescdn.com/8.53/30447/graphic//buildings/smith.png" alt="Кузница" />Кузница
+																</a>
+															</span>
+												</li>
+                                                																																                                                 
+												<li  class="quickbar_item" data-hotkey="6">
+															<span>
+																<a class="quickbar_link" data-hash="cc5ffd9297792b3360ffc14dba7edf5f" href="/game.php?village=5562&amp;screen=place"  >
+																	<img src="https://dsru.innogamescdn.com/8.53/30447/graphic//buildings/place.png" alt="Площадь" />Площадь
+																</a>
+															</span>
+												</li>
+                                                																																                                                 
+												<li  class="quickbar_item" data-hotkey="7">
+															<span>
+																<a class="quickbar_link" data-hash="7d6f4d2c6f77d1637b4c3578dffa4b47" href="/game.php?village=5562&amp;screen=market"  >
+																	<img src="https://dsru.innogamescdn.com/8.53/30447/graphic//buildings/market.png" alt="Рынок" />Рынок
+																</a>
+															</span>
+												</li>
+                                                																														</ul>
+								</td>
+								<td class="right"> </td>
+							</tr>
+							<tr class="bottomborder">
+								<td class="left"> </td>
+								<td class="main"> </td>
+								<td class="right"> </td>
+							</tr>
+							<tr>
+								<td class="shadow" colspan="3">
+									<div class="leftshadow"> </div>
+									<div class="rightshadow"> </div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+	        
+			<hr class="oldStyleOnly" />
+
+			<table id="header_info" align="center" width="100%" cellspacing="0">
+				<colgroup>
+					<col width="1%" />
+					<col width="96%" />
+					<col width="1%" />
+					<col width="1%" />
+					<col width="1%" />
+				</colgroup>
+				<tr>
+					<td class="topAlign">
+						<table class="header-border">
+	                        <tr>
+	                            <td>
+									<table class="box menu nowrap">
+	                                    <tr id="menu_row2">
+																																																							<td style="white-space:nowrap;" id="menu_row2_village" class="firstcell box-item icon-box nowrap">
+												<a class="nowrap tooltip-delayed" title="Обзор деревни<br/> :: горячая клавиша: &lt;b&gt;v&lt;/b&gt;" href="/game.php?village=5562&amp;screen=overview"><span class="icon header village"></span>Tryhard</a>
+											</td>
+																						<td class="box-item" style="padding-right: 6px"><b class="nowrap">(445|548) K54</b></td>
+												                                        <td class="box-item">
+	                                        	<script type="text/javascript">
+												//<![CDATA[
+	                                        		villageDock.saveLink = '/game.php?village=5562&screen=overview&ajaxaction=dockVillagelist&h=7e4abfa8';		                                        	villageDock.loadLink = '/game.php?village=5562&screen=groups&mode=overview&ajax=load_group_menu';
+		                                        	villageDock.docked = 0;
+
+													$(function() {
+				                                        if(villageDock.docked) {
+					                                        villageDock.open();
+				                                        }
+													});
+		                                        //]]>
+		                                        </script>
+	                                        	<a href="#" id="open_groups" onclick="return villageDock.open(event);"><span class="icon header arr_down"></span></a>
+												<a href="#" id="close_groups" onclick="return villageDock.close(event);" style="display: none;"><span class="icon header arr_up"></span></a>
+	                                            <input type="hidden" id="popup_close" value="закрыть" />
+	                                            <input type="hidden" value="/game.php?village=5562&amp;screen=groups&amp;ajax=load_villages_from_group&amp;mode=overview" id="show_groups_villages_link" />
+	                                            <input type="hidden" value="/game.php?screen=place" id="village_link" />
+	                                            <input type="hidden" value="overview" id="group_popup_mode" />
+	                                            <input type="hidden" value="Группа:" id="group_popup_select_title" />
+	                                            <input type="hidden" value="Деревня" id="group_popup_villages_select" />
+	                                        </td>
+												                                    </tr>
+	                                </table>
+	                            </td>
+	                        </tr>
+							<tr class="newStyleOnly">
+								<td class="shadow">
+									<div class="leftshadow"> </div>
+									<div class="rightshadow"> </div>
+								</td>
+							</tr>
+	                    </table>
+                	</td>
+
+				<td align="right" class="topAlign"> </td><!-- flexible gap -->
+
+				<td align="right" class="topAlign">
+				
+                </td>
+                <td align="right" class="topAlign">
+					<table align="right" class="header-border menu_block_right">
+						<tr>
+							<td>
+								<table class="box smallPadding" cellspacing="0" style="empty-cells:show;">
+									<tr style="height: 20px;">
+										<td class="box-item icon-box firstcell">
+											<a href="/game.php?village=5562&amp;screen=wood" title="Дерево - 1657 в час"><span class="icon header wood"> </span></a>
+										</td>
+                                        <td class="box-item" style="position: relative">
+                                        	<span id="wood" title="Дерево - 1657 в час" class="res">7916</span>
+                                        </td>
+                                        <td class="box-item icon-box">
+                                        	<a href="/game.php?village=5562&amp;screen=stone" title="Глина - 1545 в час"><span class="icon header stone"> </span></a>
+                                        </td>
+                                        <td class="box-item">
+                                        	<span id="stone" title="Глина - 1545 в час" class="res">14705</span>
+                                        </td>
+                                        <td class="box-item icon-box">
+                                        	<a href="/game.php?village=5562&amp;screen=iron" title="Железо - 982 в час"><span class="icon header iron" > </span></a>
+                                        </td>
+										<td class="box-item">
+											<span id="iron" title="Железо - 982 в час" class="res">7223</span>
+										</td>
+                                        <td class="box-item icon-box">
+                                        	<a href="/game.php?village=5562&amp;screen=storage" title="Ёмкость склада"><span class="icon header ressources"> </span></a>
+                                        </td>
+                                        <td class="box-item">
+                                        	<span id="storage" title="Ёмкость склада">50675</span>
+                                        </td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr class="newStyleOnly">
+							<td class="shadow">
+								<div class="leftshadow"> </div>
+								<div class="rightshadow"> </div>
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td align="right" class="topAlign">
+					<table class="header-border menu_block_right">
+						<tr>
+							<td>
+								<table class="box smallPadding" cellspacing="0">
+									<tr>
+										<td class="box-item icon-box firstcell"><a href="/game.php?village=5562&amp;screen=farm" title="Усадьба"><span class="icon header population"> </span></a></td>
+                                        <td class="box-item" align="center" style="margin:0;padding:0;" title="Усадьба">
+                                        	<span id="pop_current_label" class="">2855</span>/<span id="pop_max_label">3569</span>
+                                        </td>
+                                    </tr>
+								</table>
+							</td>
+						</tr>
+						<tr class="newStyleOnly">
+							<td class="shadow">
+								<div class="leftshadow"> </div>
+								<div class="rightshadow"> </div>
+							</td>
+						</tr>
+					</table>
+				</td>
+								<td align="right" class="topAlign">
+					<table class="header-border menu_block_right" style="border-collapse: collapse;">
+						<tr>
+							<td>
+								<table class="box" cellspacing="0">
+									<tr>
+																				<td class="box-item firstcell" style="white-space:nowrap;">
+                                            <a title="Флаги" href="/game.php?village=5562&amp;screen=flags" style="vertical-align:middle;">
+                                                <span class="icon header flags"></span>                                            </a>
+                                        </td>
+																														<td class="box-item icon-box"><a title="Паладин" href="/game.php?village=5562&amp;screen=statue"><span class="icon header knight"></span></a></td>
+										                                                                                    <td class="box-item icon-box">
+                                                <a href="/game.php?village=5562&amp;screen=ranking&amp;mode=compete" class="tooltip" title=""><img src="https://dsru.innogamescdn.com/8.53/30447/graphic/events/compete/icon.png" title="" alt="" class="menu-event-icon" /></a>
+                                            </td>
+                                        									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr class="newStyleOnly">
+							<td class="shadow">
+								<div class="leftshadow"> </div>
+								<div class="rightshadow"> </div>
+							</td>
+						</tr>
+					</table>
+								<td class="topAlign  " id="header_commands">
+					<table class="header-border menu_block_right">
+						<tr>
+							<td>
+								<table class="box smallPadding no-gap" cellspacing="0">
+									<tr>
+
+										<td id="incomings_cell" style="text-align: center; padding: 0 4px" class="box-item firstcell nowrap">
+											<a style="vertical-align: middle" href="/game.php?village=5562&amp;screen=overview_villages&amp;mode=incomings&amp;subtype=attacks">											<img src="https://dsru.innogamescdn.com/8.53/30447/graphic/unit/att.png" title="Ожидаемые Нападения" style="vertical-align: -2px" alt="" class="" />
+											<span id="incomings_amount">0</span>
+											</a>										</td>
+
+										<td id="supports_cell" style="text-align: center; padding: 0 4px" class="box-item separate nowrap">
+											<a href="/game.php?village=5562&amp;screen=overview_villages&amp;mode=incomings&amp;subtype=supports">
+												<img src="https://dsru.innogamescdn.com/8.53/30447/graphic/command/support.png" title="Запрошенное подкрепление" style="vertical-align: -2px" alt="" class="" />
+												<span id="supports_amount">0</span>
+											</a>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr class="newStyleOnly">
+							<td class="shadow">
+								<div class="leftshadow"> </div>
+								<div class="rightshadow"> </div>
+							</td>
+						</tr>
+					</table>
+				</td>
+
+			</tr>
+		</table>
+
+        <div id="units_help"><script type="text/javascript">
+//<![CDATA[
+	$(function() {
+		UnitPopup.unit_data = {"spear":{"name":"\u041a\u043e\u043f\u0435\u0439\u0449\u0438\u043a","shortname":"\u041a\u043e\u043f\u0435\u0439\u0449\u0438\u043a","image":"unit\/unit_spear.png","type":"infantry","desc":"\u041a\u043e\u043f\u0435\u0439\u0449\u0438\u043a \u2014 \u043f\u0440\u043e\u0441\u0442\u0435\u0439\u0448\u0430\u044f \u0431\u043e\u0435\u0432\u0430\u044f \u0435\u0434\u0438\u043d\u0438\u0446\u0430. \u041e\u0441\u043e\u0431\u0435\u043d\u043d\u043e \u043f\u043e\u043b\u0435\u0437\u0435\u043d \u043f\u0440\u0438 \u0437\u0430\u0449\u0438\u0442\u0435 \u043e\u0442 \u0432\u0441\u0430\u0434\u043d\u0438\u043a\u043e\u0432.","desc_abilities":[],"prod_building":"barracks","build_time":1020,"wood":50,"stone":30,"iron":10,"pop":1,"speed":0.0009259259259,"attack":10,"building_attack_multiplier":null,"additional_max_wall_negation":null,"defense":15,"defense_cavalry":45,"defense_archer":20,"carry":25,"tag_group":"infantry","can_attack":true,"can_support":true,"attackpoints":4,"defpoints":1,"reqs":[{"building_id":"barracks","building_link":"\/game.php?village=5562&amp;screen=barracks","name":"\u041a\u0430\u0437\u0430\u0440\u043c\u0430","level":1}]},"sword":{"name":"\u041c\u0435\u0447\u043d\u0438\u043a","shortname":"\u041c\u0435\u0447\u043d\u0438\u043a","image":"unit\/unit_sword.png","type":"infantry","desc":"\u041c\u0435\u0447\u043d\u0438\u043a \u043e\u0441\u043e\u0431\u0435\u043d\u043d\u043e \u0445\u043e\u0440\u043e\u0448 \u0434\u043b\u044f \u0437\u0430\u0449\u0438\u0442\u044b \u043e\u0442 \u043f\u0435\u0445\u043e\u0442\u044b. \u041e\u0434\u043d\u0430\u043a\u043e, \u043e\u043d \u0434\u043e\u0432\u043e\u043b\u044c\u043d\u043e \u043d\u0435\u043f\u043e\u0432\u043e\u0440\u043e\u0442\u043b\u0438\u0432\u044b\u0439.","desc_abilities":[],"prod_building":"barracks","build_time":1500,"wood":30,"stone":30,"iron":70,"pop":1,"speed":0.0007575757576,"attack":25,"building_attack_multiplier":null,"additional_max_wall_negation":null,"defense":50,"defense_cavalry":15,"defense_archer":40,"carry":15,"tag_group":"infantry","can_attack":true,"can_support":true,"attackpoints":5,"defpoints":2,"reqs":[{"building_id":"smith","building_link":"\/game.php?village=5562&amp;screen=smith","name":"\u041a\u0443\u0437\u043d\u0438\u0446\u0430","level":1}]},"axe":{"name":"\u0422\u043e\u043f\u043e\u0440\u043d\u0438\u043a","shortname":"\u0422\u043e\u043f\u043e\u0440\u043d\u0438\u043a","image":"unit\/unit_axe.png","type":"infantry","desc":"\u0422\u043e\u043f\u043e\u0440\u043d\u0438\u043a \u043e\u0441\u043e\u0431\u0435\u043d\u043d\u043e \u043f\u043e\u043b\u0435\u0437\u0435\u043d \u043f\u0440\u0438 \u043d\u0430\u043f\u0430\u0434\u0435\u043d\u0438\u0438. \u042d\u0442\u0438 \u0434\u0438\u043a\u0438\u0435 \u0432\u043e\u0438\u043d\u044b \u0430\u0442\u0430\u043a\u0443\u044e\u0442 \u0432\u0440\u0430\u0433\u0430 \u0441 \u043e\u0433\u043b\u0443\u0448\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u043c \u0440\u0451\u0432\u043e\u043c.","desc_abilities":[],"prod_building":"barracks","build_time":1320,"wood":60,"stone":30,"iron":40,"pop":1,"speed":0.0009259259259,"attack":40,"building_attack_multiplier":null,"additional_max_wall_negation":null,"defense":10,"defense_cavalry":5,"defense_archer":10,"carry":10,"tag_group":"infantry","can_attack":true,"can_support":true,"attackpoints":1,"defpoints":4,"reqs":[{"building_id":"smith","building_link":"\/game.php?village=5562&amp;screen=smith","name":"\u041a\u0443\u0437\u043d\u0438\u0446\u0430","level":2}],"tech_costs":{"wood":700,"stone":840,"iron":820}},"archer":{"name":"\u041b\u0443\u0447\u043d\u0438\u043a","shortname":"\u041b\u0443\u0447\u043d\u0438\u043a","image":"unit\/unit_archer.png","type":"archer","desc":"\u041b\u0443\u0447\u043d\u0438\u043a\u0438 \u2014 \u043d\u0430\u0434\u0451\u0436\u043d\u0430\u044f \u0437\u0430\u0449\u0438\u0442\u0430. \u0414\u0430\u0436\u0435 \u0431\u0440\u043e\u043d\u044f \u043d\u0435 \u0443\u0441\u0442\u043e\u0438\u0442 \u043f\u043e\u0434 \u0433\u0440\u0430\u0434\u043e\u043c \u0438\u0445 \u0441\u0442\u0440\u0435\u043b.","desc_abilities":[],"prod_building":"barracks","build_time":1800,"wood":100,"stone":30,"iron":60,"pop":1,"speed":0.0009259259259,"attack":15,"building_attack_multiplier":null,"additional_max_wall_negation":null,"defense":50,"defense_cavalry":40,"defense_archer":5,"carry":10,"tag_group":"infantry","can_attack":true,"can_support":true,"attackpoints":5,"defpoints":2,"reqs":[{"building_id":"barracks","building_link":"\/game.php?village=5562&amp;screen=barracks","name":"\u041a\u0430\u0437\u0430\u0440\u043c\u0430","level":5},{"building_id":"smith","building_link":"\/game.php?village=5562&amp;screen=smith","name":"\u041a\u0443\u0437\u043d\u0438\u0446\u0430","level":5}],"tech_costs":{"wood":640,"stone":560,"iron":740}},"spy":{"name":"\u041b\u0430\u0437\u0443\u0442\u0447\u0438\u043a","shortname":"\u041b\u0430\u0437\u0443\u0442\u0447\u0438\u043a","image":"unit\/unit_spy.png","type":"other","desc":"\u041b\u0430\u0437\u0443\u0442\u0447\u0438\u043a \u043f\u0440\u043e\u0431\u0438\u0440\u0430\u0435\u0442\u0441\u044f \u0437\u0430 \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u0435\u0439 \u0432\u043e \u0432\u0440\u0430\u0436\u0435\u0441\u043a\u0438\u0435 \u0434\u0435\u0440\u0435\u0432\u043d\u0438.","desc_abilities":["\u041f\u0440\u0438 \u0430\u0442\u0430\u043a\u0435 \u043c\u043e\u0436\u0435\u0442 \u0431\u044b\u0442\u044c \u043f\u043e\u0439\u043c\u0430\u043d \u0442\u043e\u043b\u044c\u043a\u043e \u0434\u0440\u0443\u0433\u0438\u043c\u0438 \u043b\u0430\u0437\u0443\u0442\u0447\u0438\u043a\u0430\u043c\u0438.","\u041f\u043e\u0441\u043b\u0435 \u0430\u0442\u0430\u043a\u0438 \u0440\u0430\u0441\u043a\u0440\u044b\u0432\u0430\u0435\u0442 \u0434\u043e\u043f\u043e\u043b\u043d\u0438\u0442\u0435\u043b\u044c\u043d\u0443\u044e \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044e \u0432 \u0431\u043e\u0435\u0432\u043e\u043c \u043e\u0442\u0447\u0451\u0442\u0435."],"prod_building":"stable","build_time":900,"wood":50,"stone":50,"iron":20,"pop":2,"speed":0.001851851852,"attack":0,"building_attack_multiplier":null,"additional_max_wall_negation":null,"defense":2,"defense_cavalry":1,"defense_archer":2,"carry":0,"tag_group":"spy","can_attack":true,"can_support":true,"attackpoints":1,"defpoints":2,"reqs":[{"building_id":"stable","building_link":"\/game.php?village=5562&amp;screen=stable","name":"\u041a\u043e\u043d\u044e\u0448\u043d\u044f","level":1}],"tech_costs":{"wood":560,"stone":480,"iron":480}},"light":{"name":"\u041b\u0451\u0433\u043a\u0438\u0439 \u043a\u0430\u0432\u0430\u043b\u0435\u0440\u0438\u0441\u0442","shortname":"\u041b\u041a\u0430\u0432","image":"unit\/unit_light.png","type":"cavalry","desc":"\u041b\u0451\u0433\u043a\u0430\u044f \u043a\u0430\u0432\u0430\u043b\u0435\u0440\u0438\u044f \u0445\u043e\u0440\u043e\u0448\u0438\u0439 \u0440\u043e\u0434 \u0432\u043e\u0439\u0441\u043a \u0434\u043b\u044f \u043d\u0430\u043f\u0430\u0434\u0435\u043d\u0438\u044f. \u041e\u0434\u043d\u043e \u0438\u0437 \u0435\u0451 \u043f\u0440\u0435\u0438\u043c\u0443\u0449\u0435\u0441\u0442\u0432 - \u0441\u043a\u043e\u0440\u043e\u0441\u0442\u044c.","desc_abilities":[],"prod_building":"stable","build_time":1800,"wood":125,"stone":100,"iron":250,"pop":4,"speed":0.001666666667,"attack":130,"building_attack_multiplier":null,"additional_max_wall_negation":null,"defense":30,"defense_cavalry":40,"defense_archer":30,"carry":80,"tag_group":"cavalry","can_attack":true,"can_support":true,"attackpoints":5,"defpoints":13,"reqs":[{"building_id":"stable","building_link":"\/game.php?village=5562&amp;screen=stable","name":"\u041a\u043e\u043d\u044e\u0448\u043d\u044f","level":3}],"tech_costs":{"wood":2200,"stone":2400,"iron":2000}},"marcher":{"name":"\u041a\u043e\u043d\u043d\u044b\u0439 \u043b\u0443\u0447\u043d\u0438\u043a","shortname":"\u041a\u041b\u0443\u0447","image":"unit\/unit_marcher.png","type":"archer","desc":"\u041a\u043e\u043d\u043d\u044b\u0439 \u043b\u0443\u0447\u043d\u0438\u043a \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u044c\u043d\u043e \u043e\u0431\u0443\u0447\u0435\u043d \u0441\u043d\u0438\u043c\u0430\u0442\u044c \u0441\u0432\u043e\u0438\u043c\u0438 \u0442\u043e\u0447\u043d\u044b\u043c\u0438 \u0432\u044b\u0441\u0442\u0440\u0435\u043b\u0430\u043c\u0438 \u043b\u0443\u0447\u043d\u0438\u043a\u043e\u0432 \u043f\u0440\u043e\u0442\u0438\u0432\u043d\u0438\u043a\u0430 \u0441\u043e \u0421\u0442\u0435\u043d.","desc_abilities":[],"prod_building":"stable","build_time":2700,"wood":250,"stone":100,"iron":150,"pop":5,"speed":0.001666666667,"attack":120,"building_attack_multiplier":null,"additional_max_wall_negation":null,"defense":40,"defense_cavalry":30,"defense_archer":50,"carry":50,"tag_group":"cavalry","can_attack":true,"can_support":true,"attackpoints":6,"defpoints":12,"reqs":[{"building_id":"stable","building_link":"\/game.php?village=5562&amp;screen=stable","name":"\u041a\u043e\u043d\u044e\u0448\u043d\u044f","level":5}],"tech_costs":{"wood":3000,"stone":2400,"iron":2000}},"heavy":{"name":"\u0422\u044f\u0436\u0451\u043b\u044b\u0439 \u043a\u0430\u0432\u0430\u043b\u0435\u0440\u0438\u0441\u0442","shortname":"\u0422\u041a\u0430\u0432","image":"unit\/unit_heavy.png","type":"cavalry","desc":"\u0422\u044f\u0436\u0451\u043b\u0430\u044f \u043a\u0430\u0432\u0430\u043b\u0435\u0440\u0438\u044f \u2014 \u044d\u0442\u043e \u044d\u043b\u0438\u0442\u043d\u044b\u0435 \u0432\u043e\u0439\u0441\u043a\u0430, \u0431\u043b\u0430\u0433\u043e\u0440\u043e\u0434\u043d\u044b\u0435 \u0440\u044b\u0446\u0430\u0440\u0438, \u0432\u043e\u043e\u0440\u0443\u0436\u0451\u043d\u043d\u044b\u0435 \u0437\u0430\u043a\u0430\u043b\u0451\u043d\u043d\u044b\u043c \u043e\u0440\u0443\u0436\u0438\u0435\u043c \u0438 \u0437\u0430\u043a\u043e\u0432\u0430\u043d\u043d\u044b\u0435 \u0432 \u0442\u044f\u0436\u0451\u043b\u044b\u0435 \u043b\u0430\u0442\u044b.","desc_abilities":[],"prod_building":"stable","build_time":3600,"wood":200,"stone":150,"iron":600,"pop":6,"speed":0.001515151515,"attack":150,"building_attack_multiplier":null,"additional_max_wall_negation":null,"defense":200,"defense_cavalry":80,"defense_archer":180,"carry":50,"tag_group":"cavalry","can_attack":true,"can_support":true,"attackpoints":23,"defpoints":15,"reqs":[{"building_id":"stable","building_link":"\/game.php?village=5562&amp;screen=stable","name":"\u041a\u043e\u043d\u044e\u0448\u043d\u044f","level":10},{"building_id":"smith","building_link":"\/game.php?village=5562&amp;screen=smith","name":"\u041a\u0443\u0437\u043d\u0438\u0446\u0430","level":15}],"tech_costs":{"wood":3000,"stone":2400,"iron":2000}},"ram":{"name":"\u0422\u0430\u0440\u0430\u043d","shortname":"\u0422\u0430\u0440\u0430\u043d","image":"unit\/unit_ram.png","type":"infantry","desc":"\u0422\u0430\u0440\u0430\u043d\u044b \u043f\u043e\u043c\u043e\u0433\u0430\u044e\u0442 \u0432\u0430\u0448\u0438\u043c \u0432\u043e\u0439\u0441\u043a\u0430\u043c \u0432 \u0430\u0442\u0430\u043a\u0435, \u0440\u0430\u0437\u0440\u0443\u0448\u0430\u044f \u0421\u0442\u0435\u043d\u0443 \u043f\u0440\u043e\u0442\u0438\u0432\u043d\u0438\u043a\u0430.","desc_abilities":["\u0420\u0430\u0437\u0440\u0443\u0448\u0430\u0435\u0442 \u0421\u0442\u0435\u043d\u0443, \u0443\u043c\u0435\u043d\u044c\u0448\u0430\u044f \u0435\u0451 \u044d\u0444\u0444\u0435\u043a\u0442."],"prod_building":"garage","build_time":4800,"wood":300,"stone":200,"iron":200,"pop":5,"speed":0.0005555555556,"attack":2,"building_attack_multiplier":1,"additional_max_wall_negation":0,"defense":20,"defense_cavalry":50,"defense_archer":20,"carry":0,"tag_group":"siege","can_attack":true,"can_support":true,"attackpoints":4,"defpoints":8,"reqs":[{"building_id":"garage","building_link":"\/game.php?village=5562&amp;screen=garage","name":"\u041c\u0430\u0441\u0442\u0435\u0440\u0441\u043a\u0430\u044f","level":1}],"tech_costs":{"wood":1200,"stone":1600,"iron":800}},"catapult":{"name":"\u041a\u0430\u0442\u0430\u043f\u0443\u043b\u044c\u0442\u0430","shortname":"\u041a\u0430\u0442\u0430","image":"unit\/unit_catapult.png","type":"infantry","desc":"\u041a\u0430\u0442\u0430\u043f\u0443\u043b\u044c\u0442\u044b \u043d\u0430\u043d\u043e\u0441\u044f\u0442 \u0443\u0440\u043e\u043d \u0432\u0440\u0430\u0436\u0435\u0441\u043a\u0438\u043c \u0432\u043e\u0439\u0441\u043a\u0430\u043c \u0438 \u0440\u0430\u0437\u0440\u0443\u0448\u0430\u044e\u0442 \u043f\u043e\u0441\u0442\u0440\u043e\u0439\u043a\u0438 \u043f\u0440\u043e\u0442\u0438\u0432\u043d\u0438\u043a\u0430.","desc_abilities":["\u0423\u043d\u0438\u0447\u0442\u043e\u0436\u0430\u0435\u0442 \u0432\u044b\u0431\u0440\u0430\u043d\u043d\u044b\u0435 \u043f\u043e\u0441\u0442\u0440\u043e\u0439\u043a\u0438 \u043f\u0440\u043e\u0442\u0438\u0432\u043d\u0438\u043a\u0430."],"prod_building":"garage","build_time":7200,"wood":320,"stone":400,"iron":100,"pop":8,"speed":0.0005555555556,"attack":100,"building_attack_multiplier":1,"additional_max_wall_negation":null,"defense":100,"defense_cavalry":50,"defense_archer":100,"carry":0,"tag_group":"siege","can_attack":true,"can_support":true,"attackpoints":12,"defpoints":10,"reqs":[{"building_id":"garage","building_link":"\/game.php?village=5562&amp;screen=garage","name":"\u041c\u0430\u0441\u0442\u0435\u0440\u0441\u043a\u0430\u044f","level":2},{"building_id":"smith","building_link":"\/game.php?village=5562&amp;screen=smith","name":"\u041a\u0443\u0437\u043d\u0438\u0446\u0430","level":12}],"tech_costs":{"wood":1600,"stone":2000,"iron":1200}},"knight":{"name":"\u041f\u0430\u043b\u0430\u0434\u0438\u043d","shortname":"\u041f\u0430\u043b","image":"unit\/unit_knight.png","type":"cavalry","desc":"\u041f\u0430\u043b\u0430\u0434\u0438\u043d \u044d\u0442\u043e \u043c\u043e\u0449\u043d\u044b\u0439 \u0438 \u0440\u0435\u0434\u043a\u0438\u0439 \u0432\u043e\u0438\u043d, \u043a\u043e\u0442\u043e\u0440\u043e\u0433\u043e \u043c\u043e\u0436\u043d\u043e \u043d\u0430\u043d\u044f\u0442\u044c \u0443 \u0432\u0430\u0448\u0435\u0439 \u0421\u0442\u0430\u0442\u0443\u0438. \u041e\u043d \u0442\u0430\u043a\u0436\u0435 \u043c\u043e\u0436\u0435\u0442 \u0431\u044b\u0441\u0442\u0440\u043e \u043e\u0442\u043f\u0440\u0430\u0432\u043b\u044f\u0442\u044c \u043f\u043e\u0434\u043a\u0440\u0435\u043f\u043b\u0435\u043d\u0438\u0435.","desc_abilities":["\u041c\u043e\u0436\u0435\u0442 \u043e\u0431\u0443\u0447\u0430\u0442\u044c\u0441\u044f \u0440\u0430\u0437\u043b\u0438\u0447\u043d\u044b\u043c \u0443\u043c\u0435\u043d\u0438\u044f\u043c.","\u041c\u043e\u0436\u0435\u0442 \u043f\u043e\u043b\u0443\u0447\u0430\u0442\u044c \u043e\u043f\u044b\u0442 \u0438 \u043d\u043e\u0432\u044b\u0435 \u0443\u0440\u043e\u0432\u043d\u0438.","\u041c\u043e\u0436\u043d\u043e \u043d\u0430\u043d\u044f\u0442\u044c \u0431\u043e\u043b\u044c\u0448\u0435  \u043f\u0430\u043b\u0430\u0434\u0438\u043d\u043e\u0432, \u0437\u0430\u0445\u0432\u0430\u0442\u044b\u0432\u0430\u044f \u0434\u0440\u0443\u0433\u0438\u0435 \u0434\u0435\u0440\u0435\u0432\u043d\u0438.","\u0412\u043e\u0439\u0441\u043a\u0430 \u0441 \u043f\u0430\u043b\u0430\u0434\u0438\u043d\u043e\u043c, \u043a\u043e\u0442\u043e\u0440\u044b\u0435 \u0438\u0434\u0443\u0442 \u0432 \u043f\u043e\u0434\u043a\u0440\u0435\u043f\u043b\u0435\u043d\u0438\u0435, \u043f\u0435\u0440\u0435\u0434\u0432\u0438\u0433\u0430\u044e\u0442\u0441\u044f \u0441\u043e \u0441\u043a\u043e\u0440\u043e\u0441\u0442\u044c\u044e \u041f\u0430\u043b\u0430\u0434\u0438\u043d\u0430."],"prod_building":"statue","build_time":21600,"wood":20,"stone":20,"iron":40,"pop":10,"speed":0.001666666667,"attack":150,"building_attack_multiplier":null,"additional_max_wall_negation":null,"defense":250,"defense_cavalry":400,"defense_archer":150,"carry":100,"tag_group":"infantry","can_attack":true,"can_support":true,"attackpoints":40,"defpoints":20},"snob":{"name":"\u0414\u0432\u043e\u0440\u044f\u043d\u0438\u043d","shortname":"\u0414\u0432\u043e\u0440\u044f\u043d\u0438\u043d","image":"unit\/unit_snob.png","type":"infantry","desc":"\u041d\u0430\u043f\u0430\u0434\u0435\u043d\u0438\u0435, \u0432 \u043a\u043e\u0442\u043e\u0440\u043e\u043c \u0431\u0443\u0434\u0435\u0442 \u0438 \u0432\u044b\u0436\u0438\u0432\u0435\u0442 \u0445\u043e\u0442\u044f \u0431\u044b \u043e\u0434\u0438\u043d \u0434\u0432\u043e\u0440\u044f\u043d\u0438\u043d, \u0443\u043c\u0435\u043d\u044c\u0448\u0438\u0442 \u043b\u043e\u044f\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u043d\u0430\u0441\u0435\u043b\u0435\u043d\u0438\u044f \u0434\u0435\u0440\u0435\u0432\u043d\u0438. \u0415\u0441\u043b\u0438 \u043b\u043e\u044f\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u0443\u043c\u0435\u043d\u044c\u0448\u0435\u043d\u0430 \u0434\u043e 0 \u0438\u043b\u0438 \u043d\u0438\u0436\u0435, \u0432\u044b \u0437\u0430\u0445\u0432\u0430\u0442\u0438\u0442\u0435 \u0434\u0435\u0440\u0435\u0432\u043d\u044e, \u043d\u043e \u0432\u0430\u0448 \u0434\u0432\u043e\u0440\u044f\u043d\u0438\u043d \u0438\u0441\u0447\u0435\u0437\u043d\u0435\u0442. ","desc_abilities":["\u0423\u043c\u0435\u043d\u044c\u0448\u0430\u0435\u0442 \u043b\u043e\u044f\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u0430\u0442\u0430\u043a\u0443\u0435\u043c\u043e\u0439 \u0434\u0435\u0440\u0435\u0432\u043d\u0438 \u0432 \u0434\u0438\u0430\u043f\u0430\u0437\u043e\u043d\u0435 \u043e\u0442 20 \u0434\u043e 35 \u043e\u0447\u043a\u043e\u0432."],"prod_building":"snob","build_time":18000,"wood":40000,"stone":50000,"iron":50000,"pop":100,"speed":0.0004761904762,"attack":30,"building_attack_multiplier":null,"additional_max_wall_negation":null,"defense":100,"defense_cavalry":50,"defense_archer":100,"carry":0,"tag_group":"snob","can_attack":true,"can_support":true,"attackpoints":200,"defpoints":200,"reqs":[{"building_id":"snob","building_link":"\/game.php?village=5562&amp;screen=snob","name":"\u041e\u0441\u043e\u0431\u043d\u044f\u043a","level":1},{"building_id":"main","building_link":"\/game.php?village=5562&amp;screen=main","name":"\u0420\u0430\u0442\u0443\u0448\u0430","level":20},{"building_id":"smith","building_link":"\/game.php?village=5562&amp;screen=smith","name":"\u041a\u0443\u0437\u043d\u0438\u0446\u0430","level":20},{"building_id":"market","building_link":"\/game.php?village=5562&amp;screen=market","name":"\u0420\u044b\u043d\u043e\u043a","level":10}]},"militia":{"name":"\u041e\u043f\u043e\u043b\u0447\u0435\u043d\u0438\u0435","shortname":"\u041e\u043f\u043e\u043b\u0447\u0435\u043d\u0438\u0435","image":"unit\/unit_militia.png","type":"infantry","desc":"\u0415\u0441\u043b\u0438 \u0432\u044b \u043e\u0436\u0438\u0434\u0430\u0435\u0442\u0435 \u0430\u0442\u0430\u043a\u0443 \u043d\u0430 \u0441\u0432\u043e\u044e \u0434\u0435\u0440\u0435\u0432\u043d\u044e, \u0432\u044b \u043c\u043e\u0436\u0435\u0442\u0435 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u044c \u0423\u0441\u0430\u0434\u044c\u0431\u0443 \u0434\u043b\u044f \u043d\u0430\u0431\u043e\u0440\u0430 \u043e\u043f\u043e\u043b\u0447\u0435\u043d\u0438\u044f, \u043a\u043e\u0442\u043e\u0440\u043e\u0435 \u0437\u0430\u0449\u0438\u0442\u0438\u0442 \u0432\u0430\u0448\u0443 \u0437\u0435\u043c\u043b\u044e. \u041e\u043f\u043e\u043b\u0447\u0435\u043d\u0438\u044f \u043c\u043e\u0433\u0443\u0442 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u044c\u0441\u044f \u0442\u043e\u043b\u044c\u043a\u043e \u0432 \u0446\u0435\u043b\u044f\u0445 \u0437\u0430\u0449\u0438\u0442\u044b \u0438 \u043d\u0435 \u043c\u043e\u0433\u0443\u0442 \u043f\u043e\u043a\u0438\u0434\u0430\u0442\u044c \u0434\u0435\u0440\u0435\u0432\u043d\u044e.","desc_abilities":[],"prod_building":"farm","build_time":1,"wood":0,"stone":0,"iron":0,"pop":0,"speed":1,"attack":0,"building_attack_multiplier":null,"additional_max_wall_negation":null,"defense":15,"defense_cavalry":45,"defense_archer":25,"carry":0,"tag_group":"infantry","can_attack":false,"can_support":false,"attackpoints":4,"defpoints":1,"reqs":[{"building_id":"farm","building_link":"\/game.php?village=5562&amp;screen=farm","name":"\u0423\u0441\u0430\u0434\u044c\u0431\u0430","level":1}]}};
+		UnitPopup.init();
+			});
+//]]>
+</script>
+
+
+<div class="popup_helper">
+    <div id="inline_popup" class="hidden" style="width:700px;">
+        <div id="inline_popup_menu">
+            <span id="inline_popup_title"></span>
+            <a id="inline_popup_close" href="javascript:inlinePopupClose()">X</a>
+        </div>
+        <div id="inline_popup_main" style="height: auto;">
+            <div id="inline_popup_content"></div>
+        </div>
+    </div>
+</div>
+
+<div id="unit_popup_template" style="display: none">
+		<div class="inner-border main content-border" style="border: none; font-weight: normal">
+			<table style="float: left;width:450px">
+			<tr>
+				<td>
+					<p class="unit_desc"></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table style="border: 1px solid #DED3B9;" class="vis" width="100%">
+						<tr>
+							<th width="180">Расходы</th>
+							<th>Население</th>
+							<th>Скорость</th>
+							<th>Грузоподъемность</th>
+						</tr>
+						<tr class="center">
+							<td><nobr><span class="icon header wood"> </span><span class="unit_wood"></span></nobr> <nobr><span class="icon header stone"> </span><span class="unit_stone"></span></nobr> <nobr><span class="icon header iron" > </span><span class="unit_iron"></span></nobr></td>
+							<td><span class="icon header population"> </span><span class="unit_pop"></span></td>
+							<td id="unit_speed"></td>
+							<td class="unit_carry"></td>
+						</tr>
+					</table>
+					<br />
+
+					<table class="vis has_levels_only" style="border: 1px solid #DED3B9;text-align:center" class="vis"  width="100%">
+						<tr><th colspan="3">Статистика боёв</th></tr>
+						<tr><td align="left">Сила атаки</td><td width="20px"><img src="https://dsru.innogamescdn.com/8.53/30447/graphic/unit/att.png" alt="Сила атаки" class="" /></td><td><span class="unit_attack"></span></td></tr>
+						<tr><td align="left">Общая защита</td><td><img src="https://dsru.innogamescdn.com/8.53/30447/graphic/unit/def.png" alt="Общая защита" class="" /></td><td><span class="unit_defense"></span></td></tr>
+						<tr><td align="left">Защита от кавалерии</td><td><img src="https://dsru.innogamescdn.com/8.53/30447/graphic/unit/def_cav.png" alt="Защита от кавалерии" class="" /></td><td><span class="unit_defense_cavalry"></span></td></tr>
+												<tr><td align="left">Защита от лучников</td><td><img src="https://dsru.innogamescdn.com/8.53/30447/graphic/unit/def_archer.png" alt="Защита от лучников" class="" /></td><td><span class="unit_defense_archer"></span></td></tr>
+											</table>
+					<br />
+
+					<div class="show_if_has_abilities">
+						<table class="vis" style="width:100%;">
+							<tr><th>Специальные возможности</th></tr>
+							<tr><td><ul class="unit_info_abilities" style="margin:5px;padding-left:20px;"></ul></td></tr>
+						</table>
+						<br/>
+					</div>
+
+					<div class="show_if_has_reqs">
+						<table class="vis" width="100%">
+							<tr><th id="reqs_count" colspan="1">Условия освоения технологий</th></tr>
+							<tr id="reqs"></tr>
+						</table>
+						<br />
+					</div>
+
+					<table class="unit_tech vis unit_tech_levels"  width="100%">
+						<tr style="text-align:center">
+							<th>Технологический уровень</th>
+							<th width="350">Затраты на освоение технологий</th>
+							<th width="30" style="text-align:center"><img src="https://dsru.innogamescdn.com/8.53/30447/graphic/unit/att.png" alt="Сила атаки" class="" /></th>
+							<th width="30" style="text-align:center"><img src="https://dsru.innogamescdn.com/8.53/30447/graphic/unit/def.png" alt="Общая защита" class="" /></th>
+							<th width="30" style="text-align:center"><img src="https://dsru.innogamescdn.com/8.53/30447/graphic/unit/def_cav.png" alt="Защита от кавалерии" class="" /></th>
+							<th width="30" style="text-align:center"><img src="https://dsru.innogamescdn.com/8.53/30447/graphic/unit/def_archer.png" alt="Защита от лучников" class="" /></th>						</tr>
+						<tr id="unit_tech_prototype" style="display: none;text-align:center">
+							<td class="tech_level"></td>
+							<td>
+								<span class="grey tech_researched">уже освоено</span>
+								<span class="tech_res_list">
+									<span class="icon header wood"> </span><span class="tech_wood"></span> <span class="icon header stone"> </span><span class="tech_stone"></span> <span class="icon header iron" > </span><span class="tech_iron"></span>
+								</span>
+							</td>
+							<td class="tech_att"></td>
+							<td class="tech_def"></td>
+							<td class="tech_def_cav"></td>
+														<td class="tech_def_archer"></td>
+													</tr>
+					</table>
+					<table class="vis unit_tech unit_tech_cost"  width="100%">
+						<tr><th>Затраты на освоение технологий</th></tr>
+						<tr><td><span class="icon header wood"> </span><span class="tech_cost_wood"></span> <span class="icon header stone"> </span><span class="tech_cost_stone"></span> <span class="icon header iron" > </span><span class="tech_cost_iron"></span></td></tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<img style="margin-top: 60px; max-width: 200px; display: none" id="unit_image" src="graphic/map/empty.png" alt="" />
+		</div>
+	</div>
+</div>
+
+		
+		
+		
+		
+		<div id="script_warning" class="info_box" style="display: none;" >
+			Активированный скрипт может быть несовместим с данной версией игры.<br />
+			Если возникли проблемы, отключите или обновите скрипты.<br />
+			Если проблемы не решатся, пожалуйста, свяжитесь с автором скрипта. <ul id="script_list"></ul>
+		</div>
+
+
+	    
+        
+		<!-- *********************** CONTENT BELOW ************************** -->
+		<table align="center" id="contentContainer" width="100%">
+	        <tr>
+	            <td>
+					<table class="content-border" width="100%" cellspacing="0">
+	                    <tr>
+	                        <td id="inner-border">
+								<table class="main" align="left">
+	                                <tr>
+										<td id="content_value">
+                                            
+                                            <table width="100%">
+	<tr>
+		<td valign="top"><img src="https://dsru.innogamescdn.com/8.53/30447/graphic/big_buildings/place1.png" title="Площадь" alt="" class="" /></td>
+		<td valign="top" width="100%">
+			<h2>Площадь (Уровень 1)</h2>
+			На площади собираются ваши войска. Здесь вы можете управлять своей армией.
+		</td>
+	</tr>
+</table>
+
+<table class="vis modemenu" width="100%">
+	<tr>
+		<td  class="selected" style="min-width: 80px"><a href="/game.php?village=5562&amp;screen=place&amp;mode=command">Приказы </a></td>
+		<td  style="min-width: 80px"><a href="/game.php?village=5562&amp;screen=place&amp;mode=units">Войска </a></td>
+		<td  style="min-width: 80px"><a href="/game.php?village=5562&amp;screen=place&amp;mode=sim">Симулятор </a></td>
+		<td  style="min-width: 80px"><a href="/game.php?village=5562&amp;screen=place&amp;mode=neighbor">Соседние деревни </a></td>
+		<td  style="min-width: 80px"><a href="/game.php?village=5562&amp;screen=place&amp;mode=call">Запросить </a></td>
+		<td  style="min-width: 80px"><a href="/game.php?village=5562&amp;screen=place&amp;mode=templates">Шаблоны </a></td>
+		</tr>
+</table>
+
+<h3>Отдать приказы</h3>
+
+<div id="command-form-warning"></div>
+
+    <script type="text/javascript">
+        // this will be attached to the target widget
+        var onCommandTargetChoice = function(village) {
+            $('#command_actions .btn').eq(0).focus(); //this references the attack/support button container, which is separate from the target selection.
+
+            // Handle special village data such as for event village
+            // disabled support
+            if (village.hasOwnProperty('disallow_support')) {
+                $('#target_support').attr('disabled', 'disabled');
+            }
+            else {
+                $('#target_support').removeAttr('disabled');
+            }
+
+            // disabled units
+            $('.unitsInput').removeAttr('disabled');
+            if (village.hasOwnProperty('disallow_units')) {
+                $.each(village.disallow_units, function (k, unit_id) {
+                    $('#unit_input_' + unit_id).attr('disabled', 'disabled');
+                });
+            }
+
+            // warning message
+            if (village.hasOwnProperty('warning')) {
+                $('#command-form-warning').html('<p>' + village.warning + '</p>');
+            }
+            else {
+                $('#command-form-warning').text('');
+            }
+        };
+
+        var command_target_widget = null;
+
+        $(function() {
+            TroopTemplates.current = [];
+            $(".evt-select-template").change(function() { TroopTemplates.useTemplate(this); });
+            $(document).ready(function() {
+                var selectAllState = false;
+                $("#selectAllUnits").click(function(event) {
+                    selectAllState = !selectAllState;
+                    selectAllUnits(selectAllState);
+                    TroopTemplates.resetSelect($('.evt-select-template'));
+                    event.preventDefault();
+                });
+
+                command_target_widget = new TargetSelection($('#command_target')[0]);
+                command_target_widget.initScriptCompatibility();
+
+                
+                                command_target_widget.setLastAttacked({"id":"5402","x":"446","y":"548","name":"\u0414\u0435\u0440\u0435\u0432\u043d\u044f \u0432\u0430\u0440\u0432\u0430\u0440\u043e\u0432","player_id":"0","player_name":null,"points":"46","distance":"1","event_special":"0","image":"https:\/\/dsru.innogamescdn.com\/8.53\/30447\/graphic\/map\/icon\/v1_left_icon.png"});
+                
+                            });
+        });
+    </script>
+
+    <form id="command-data-form" name="units" action="/game.php?village=5562&amp;screen=place&amp;try=confirm" method="post" class="float_left">
+        <input type="hidden" name="69fb9bc7a0e3f46c598bbe" value="d2e6506969fb9b" />
+        <input type="hidden" id="template_id" name="template_id" value="" />
+        <input type="hidden" name="source_village" value="5562">
+
+        
+        <table>
+            <td valign="top" ><table class="vis" width="100%"><tr><th>Пехота</th></tr><tr><td class="nowrap"><a href="#" class="unit_link" data-unit="spear"><img src="https://dsru.innogamescdn.com/8.53/30447/graphic/unit/unit_spear.png" title="Копейщик" alt="" class="" /></a> <input id="unit_input_spear" name="spear" type="text" style="width: 40px" tabindex="1" value="" class="unitsInput" /> <a id="units_entry_all_spear" href="javascript:insertUnit($('#unit_input_spear'), 200)">(200)</a>
+</td></tr><tr><td class="nowrap"><a href="#" class="unit_link" data-unit="sword"><img src="https://dsru.innogamescdn.com/8.53/30447/graphic/unit/unit_sword.png" title="Мечник" alt="" class="" /></a> <input id="unit_input_sword" name="sword" type="text" style="width: 40px" tabindex="2" value="" class="unitsInput" /> <a id="units_entry_all_sword" href="javascript:insertUnit($('#unit_input_sword'), 229)">(229)</a>
+</td></tr><tr><td class="nowrap"><a href="#" class="unit_link" data-unit="axe"><img src="https://dsru.innogamescdn.com/8.53/30447/graphic/unit/unit_axe.png" title="Топорник" alt="" class="faded" /></a> <input id="unit_input_axe" name="axe" type="text" style="width: 40px" tabindex="3" value="" class="unitsInput" /> <a class="hidden"href="javascript:insertUnit($('#unit_input_axe'), 0)">(0)</a>
+</td></tr><tr><td class="nowrap"><a href="#" class="unit_link" data-unit="archer"><img src="https://dsru.innogamescdn.com/8.53/30447/graphic/unit/unit_archer.png" title="Лучник" alt="" class="faded" /></a> <input id="unit_input_archer" name="archer" type="text" style="width: 40px" tabindex="4" value="" class="unitsInput" /> <a class="hidden"href="javascript:insertUnit($('#unit_input_archer'), 0)">(0)</a>
+</td></tr></table></td>
+<td valign="top" ><table class="vis" width="100%"><tr><th>Кавалерия</th></tr><tr><td class="nowrap"><a href="#" class="unit_link" data-unit="spy"><img src="https://dsru.innogamescdn.com/8.53/30447/graphic/unit/unit_spy.png" title="Лазутчик" alt="" class="" /></a> <input id="unit_input_spy" name="spy" type="text" style="width: 40px" tabindex="5" value="" class="unitsInput" /> <a id="units_entry_all_spy" href="javascript:insertUnit($('#unit_input_spy'), 17)">(17)</a>
+</td></tr><tr><td class="nowrap"><a href="#" class="unit_link" data-unit="light"><img src="https://dsru.innogamescdn.com/8.53/30447/graphic/unit/unit_light.png" title="Лёгкий кавалерист" alt="" class="" /></a> <input id="unit_input_light" name="light" type="text" style="width: 40px" tabindex="6" value="" class="unitsInput" /> <a id="units_entry_all_light" href="javascript:insertUnit($('#unit_input_light'), 31)">(31)</a>
+</td></tr><tr><td class="nowrap"><a href="#" class="unit_link" data-unit="marcher"><img src="https://dsru.innogamescdn.com/8.53/30447/graphic/unit/unit_marcher.png" title="Конный лучник" alt="" class="faded" /></a> <input id="unit_input_marcher" name="marcher" type="text" style="width: 40px" tabindex="7" value="" class="unitsInput" /> <a class="hidden"href="javascript:insertUnit($('#unit_input_marcher'), 0)">(0)</a>
+</td></tr><tr><td class="nowrap"><a href="#" class="unit_link" data-unit="heavy"><img src="https://dsru.innogamescdn.com/8.53/30447/graphic/unit/unit_heavy.png" title="Тяжёлый кавалерист" alt="" class="faded" /></a> <input id="unit_input_heavy" name="heavy" type="text" style="width: 40px" tabindex="8" value="" class="unitsInput" /> <a class="hidden"href="javascript:insertUnit($('#unit_input_heavy'), 0)">(0)</a>
+</td></tr></table></td>
+<td valign="top" ><table class="vis" width="100%"><tr><th>Осада</th></tr><tr><td class="nowrap"><a href="#" class="unit_link" data-unit="ram"><img src="https://dsru.innogamescdn.com/8.53/30447/graphic/unit/unit_ram.png" title="Таран" alt="" class="faded" /></a> <input id="unit_input_ram" name="ram" type="text" style="width: 40px" tabindex="9" value="" class="unitsInput" /> <a class="hidden"href="javascript:insertUnit($('#unit_input_ram'), 0)">(0)</a>
+</td></tr><tr><td class="nowrap"><a href="#" class="unit_link" data-unit="catapult"><img src="https://dsru.innogamescdn.com/8.53/30447/graphic/unit/unit_catapult.png" title="Катапульта" alt="" class="faded" /></a> <input id="unit_input_catapult" name="catapult" type="text" style="width: 40px" tabindex="10" value="" class="unitsInput" /> <a class="hidden"href="javascript:insertUnit($('#unit_input_catapult'), 0)">(0)</a>
+</td></tr></table></td>
+<td valign="top" ><table class="vis" width="100%"><tr><th>Другое</th></tr><tr><td class="nowrap"><a href="#" class="unit_link" data-unit="knight"><img src="https://dsru.innogamescdn.com/8.53/30447/graphic/unit/unit_knight.png" title="Паладин" alt="" class="" /></a> <input id="unit_input_knight" name="knight" type="text" style="width: 40px" tabindex="11" value="" class="unitsInput" /> <a id="units_entry_all_knight" href="javascript:insertUnit($('#unit_input_knight'), 1)">(1)</a>
+</td></tr><tr><td class="nowrap"><a href="#" class="unit_link" data-unit="snob"><img src="https://dsru.innogamescdn.com/8.53/30447/graphic/unit/unit_snob.png" title="Дворянин" alt="" class="faded" /></a> <input id="unit_input_snob" name="snob" type="text" style="width: 40px" tabindex="12" value="" class="unitsInput" /> <a class="hidden"href="javascript:insertUnit($('#unit_input_snob'), 0)">(0)</a>
+</td></tr></table></td>
+
+        </table>
+
+        
+        <input type="text" name="x" id="inputx" value="" style="display: none" />
+        <input type="text" name="y" id="inputy" value="" style="display: none" />
+
+        <br />
+
+                    <div id="command_target" class="target-select clearfix vis float_left" data-on-choice="onCommandTargetChoice">
+                <h4>Цель:</h4>
+
+                <table class="vis" style="width: 100%">
+                    <tr>
+                        <td>
+                            <div class="target-types">
+                                <label><input type="radio" name="target_type" value="coord" checked="checked"> Координаты</label>
+                                <label><input type="radio" name="target_type" value="village_name"> Название деревни</label>
+                                <label><input type="radio" name="target_type" value="player_name"> Имя игрока:</label>
+                            </div>
+
+                            <div id="place_target" class="target-input float_left">
+                                <input type="text" name="input" class="target-input-field target-input-autocomplete" data-type="player" value="" autocomplete="off" tabindex="14" data-ignore-single-exact-match="1">
+                            </div>
+                            <a href="#" class="target-quickbutton target-last-attacked tooltip" title="Предыдущая"></a>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="target-select-links">
+                                                                    <a href="#" onclick="TargetSelection.loadTargetsPopup(event, '/game.php?village=5562&screen=targets&ajax=bookmark&building=place&prefix=&');">&raquo; Избранное</a>
+                                                                    <a href="#" onclick="TargetSelection.loadTargetsPopup(event, '/game.php?village=5562&screen=targets&ajax=recent&building=place&prefix=&');">&raquo; История</a>
+                                                                    <a href="#" onclick="TargetSelection.loadTargetsPopup(event, '/game.php?village=5562&screen=targets&ajax=claimed&building=place&prefix=&');">&raquo; Зарезервировано</a>
+                                                                    <a href="#" onclick="TargetSelection.loadTargetsPopup(event, '/game.php?village=5562&screen=targets&ajax=warplanner&building=place&prefix=&');">&raquo; Планировщик атак</a>
+                                                                                                    <span></span>
+                                                                    <span></span>
+                                                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="command_actions" class="target-select clearfix vis float_left">
+                <h4>Приказ:</h4>
+
+
+                <table class="vis" style="width: 100%">
+                    <tr>
+                        <td>
+                            <input id="target_attack" tabindex="15" class="attack btn btn-attack btn-target-action" name="attack" type="submit" value="Атака" />                            <input id="target_support" tabindex="16" class="support btn btn-support btn-target-action" name="support" type="submit" value="Подкрепление" />                        </td>
+                    </tr>
+                </table>
+            </div>
+            </form>
+
+    <div class="vis float_left" style="margin: 4px 0 0 10px; min-width: 125px;">
+	<h4><a href="/game.php?village=5562&amp;screen=place&amp;mode=templates&amp;">Шаблоны</a></h4>
+	<table class="vis" style="width: 100%">
+		<tr class="row_b">
+			<td><a id="selectAllUnits" href="#">Все войска</a></td>
+		</tr>
+			</table>
+</div>
+<div class="popup_helper">
+    <div id="inline_popup" class="hidden" >
+        <div id="inline_popup_menu">
+            <span id="inline_popup_title"></span>
+            <a id="inline_popup_close" href="javascript:inlinePopupClose()">X</a>
+        </div>
+        <div id="inline_popup_main" style="height: auto;">
+            <h3>Пункты назначения</h3>
+            <div>
+                <div id="inline_popup_content" style="height: 340px; overflow: auto;" >
+                    <img src="https://dsru.innogamescdn.com/8.53/30447/graphic//throbber.gif" alt="Тихо! Идёт загрузка!" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+	<h3 style="clear: both">Манёвры</h3>
+
+<table class="vis" style="width:100%">
+<tr>
+	<th width="52%">Свои приказы (<span class="command-list-count">30</span>)</th>
+	<th width="33%">Прибытие</th>
+	<th width="15%">Прибытие через</th>
+</tr>
+
+		
+	<tr>
+		<td>
+							<span class="own_command" data-icon-hint="Небольшой отряд (1-1000 войск) (возвращаются)" data-command-type="return" data-command-id="1621570107">
+				<img src="https://dsru.innogamescdn.com/8.53/30447/graphic/command/return_attack_small.png" title="" alt="" class="" />
+				</span>
+			
+			<span class="quickedit-out" data-id="1621570107" data-ignore-icons="1">
+				<span class="quickedit-content">
+					<a href="/game.php?village=5562&amp;screen=info_command&amp;id=1621570107&amp;type=own">
+						<span class="quickedit-label">
+							 Возвращение из деревни Деревня варваров (453|548) K54
+						</span>
+					</a>
+
+										<a class="rename-icon" href="#" title="Переименовать"></a>
+									</span>
+			</span>
+		</td>
+
+											<td>сегодня в 13:35:20:<span class="grey small">000</span> ч.</td>
+					
+		<td >
+			<span class="timer" data-endtime="1472812520">0:00:20</span>
+					</td>
+	</tr>
+		
+	<tr>
+		<td>
+							<span class="own_command" data-icon-hint="Небольшой отряд (1-1000 войск) (возвращаются)" data-command-type="return" data-command-id="1437982774">
+				<img src="https://dsru.innogamescdn.com/8.53/30447/graphic/command/return_attack_small.png" title="" alt="" class="" />
+				</span>
+			
+			<span class="quickedit-out" data-id="1437982774" data-ignore-icons="1">
+				<span class="quickedit-content">
+					<a href="/game.php?village=5562&amp;screen=info_command&amp;id=1437982774&amp;type=own">
+						<span class="quickedit-label">
+							 Возвращение из деревни Бонусная деревня (446|540) K54
+						</span>
+					</a>
+
+										<a class="rename-icon" href="#" title="Переименовать"></a>
+									</span>
+			</span>
+		</td>
+
+											<td>сегодня в 13:38:11:<span class="grey small">000</span> ч.</td>
+					
+		<td >
+			<span class="timer" data-endtime="1472812691">0:03:11</span>
+					</td>
+	</tr>
+		
+	<tr>
+		<td>
+							<span class="own_command" data-icon-hint="Небольшой отряд (1-1000 войск) (возвращаются)" data-command-type="return" data-command-id="192292649">
+				<img src="https://dsru.innogamescdn.com/8.53/30447/graphic/command/return_attack_small.png" title="" alt="" class="" />
+				</span>
+			
+			<span class="quickedit-out" data-id="192292649" data-ignore-icons="1">
+				<span class="quickedit-content">
+					<a href="/game.php?village=5562&amp;screen=info_command&amp;id=192292649&amp;type=own">
+						<span class="quickedit-label">
+							 Возвращение из деревни Деревня варваров (441|555) K54
+						</span>
+					</a>
+
+										<a class="rename-icon" href="#" title="Переименовать"></a>
+									</span>
+			</span>
+		</td>
+
+											<td>сегодня в 13:38:18:<span class="grey small">000</span> ч.</td>
+					
+		<td >
+			<span class="timer" data-endtime="1472812698">0:03:18</span>
+					</td>
+	</tr>
+		
+	<tr>
+		<td>
+							<span class="own_command" data-icon-hint="Небольшой отряд (1-1000 войск) (возвращаются)" data-command-type="return" data-command-id="546694201">
+				<img src="https://dsru.innogamescdn.com/8.53/30447/graphic/command/return_attack_small.png" title="" alt="" class="" />
+				</span>
+			
+			<span class="quickedit-out" data-id="546694201" data-ignore-icons="1">
+				<span class="quickedit-content">
+					<a href="/game.php?village=5562&amp;screen=info_command&amp;id=546694201&amp;type=own">
+						<span class="quickedit-label">
+							 Возвращение из деревни Деревня варваров (452|552) K54
+						</span>
+					</a>
+
+										<a class="rename-icon" href="#" title="Переименовать"></a>
+									</span>
+			</span>
+		</td>
+
+											<td>сегодня в 13:38:24:<span class="grey small">000</span> ч.</td>
+					
+		<td >
+			<span class="timer" data-endtime="1472812704">0:03:24</span>
+					</td>
+	</tr>
+		
+	<tr>
+		<td>
+							<span class="own_command" data-icon-hint="Небольшой отряд (1-1000 войск) (возвращаются)" data-command-type="return" data-command-id="288901662">
+				<img src="https://dsru.innogamescdn.com/8.53/30447/graphic/command/return_attack_small.png" title="" alt="" class="" />
+				</span>
+			
+			<span class="quickedit-out" data-id="288901662" data-ignore-icons="1">
+				<span class="quickedit-content">
+					<a href="/game.php?village=5562&amp;screen=info_command&amp;id=288901662&amp;type=own">
+						<span class="quickedit-label">
+							 Возвращение из деревни Деревня варваров (449|541) K54
+						</span>
+					</a>
+
+										<a class="rename-icon" href="#" title="Переименовать"></a>
+									</span>
+			</span>
+		</td>
+
+											<td>сегодня в 13:38:31:<span class="grey small">000</span> ч.</td>
+					
+		<td >
+			<span class="timer" data-endtime="1472812711">0:03:31</span>
+					</td>
+	</tr>
+		
+	<tr>
+		<td>
+							<span class="own_command" data-icon-hint="Небольшой отряд (1-1000 войск) (возвращаются)" data-command-type="return" data-command-id="472427395">
+				<img src="https://dsru.innogamescdn.com/8.53/30447/graphic/command/return_attack_small.png" title="" alt="" class="" />
+				</span>
+			
+			<span class="quickedit-out" data-id="472427395" data-ignore-icons="1">
+				<span class="quickedit-content">
+					<a href="/game.php?village=5562&amp;screen=info_command&amp;id=472427395&amp;type=own">
+						<span class="quickedit-label">
+							 Возвращение из деревни Деревня варваров (438|544) K54
+						</span>
+					</a>
+
+										<a class="rename-icon" href="#" title="Переименовать"></a>
+									</span>
+			</span>
+		</td>
+
+											<td>сегодня в 13:38:38:<span class="grey small">000</span> ч.</td>
+					
+		<td >
+			<span class="timer" data-endtime="1472812718">0:03:38</span>
+					</td>
+	</tr>
+		
+	<tr>
+		<td>
+							<span class="own_command" data-icon-hint="Небольшой отряд (1-1000 войск)" data-command-type="attack" data-command-id="2004622678">
+				<img src="https://dsru.innogamescdn.com/8.53/30447/graphic/command/attack_small.png" title="" alt="" class="" />
+				</span>
+			
+			<span class="quickedit-out" data-id="2004622678" data-ignore-icons="1">
+				<span class="quickedit-content">
+					<a href="/game.php?village=5562&amp;screen=info_command&amp;id=2004622678&amp;type=own">
+						<span class="quickedit-label">
+							 Атака на Деревня варваров (446|548) K54
+						</span>
+					</a>
+
+										<a class="rename-icon" href="#" title="Переименовать"></a>
+									</span>
+			</span>
+		</td>
+
+											<td>сегодня в 13:39:58:<span class="grey small">195</span> ч.</td>
+					
+		<td >
+			<span class="timer" data-endtime="1472812798">0:04:58</span>
+					</td>
+	</tr>
+		
+	<tr>
+		<td>
+							<span class="own_command" data-icon-hint="Небольшой отряд (1-1000 войск) (возвращаются)" data-command-type="return" data-command-id="48380108">
+				<img src="https://dsru.innogamescdn.com/8.53/30447/graphic/command/return_attack_small.png" title="" alt="" class="" />
+				</span>
+			
+			<span class="quickedit-out" data-id="48380108" data-ignore-icons="1">
+				<span class="quickedit-content">
+					<a href="/game.php?village=5562&amp;screen=info_command&amp;id=48380108&amp;type=own">
+						<span class="quickedit-label">
+							 Возвращение из деревни Бонусная деревня (439|554) K54
+						</span>
+					</a>
+
+										<a class="rename-icon" href="#" title="Переименовать"></a>
+									</span>
+			</span>
+		</td>
+
+											<td>сегодня в 13:42:54:<span class="grey small">000</span> ч.</td>
+					
+		<td >
+			<span class="timer" data-endtime="1472812974">0:07:54</span>
+					</td>
+	</tr>
+		
+	<tr>
+		<td>
+							<span class="own_command" data-icon-hint="Небольшой отряд (1-1000 войск)" data-command-type="attack" data-command-id="2088876483">
+				<img src="https://dsru.innogamescdn.com/8.53/30447/graphic/command/attack_small.png" title="" alt="" class="" />
+				</span>
+			
+			<span class="quickedit-out" data-id="2088876483" data-ignore-icons="1">
+				<span class="quickedit-content">
+					<a href="/game.php?village=5562&amp;screen=info_command&amp;id=2088876483&amp;type=own">
+						<span class="quickedit-label">
+							 Атака на Деревня варваров (446|548) K54
+						</span>
+					</a>
+
+										<a class="rename-icon" href="#" title="Переименовать"></a>
+									</span>
+			</span>
+		</td>
+
+											<td>сегодня в 13:46:05:<span class="grey small">452</span> ч.</td>
+					
+		<td >
+			<span class="timer" data-endtime="1472813165">0:11:05</span>
+					</td>
+	</tr>
+		
+	<tr>
+		<td>
+							<span class="own_command" data-icon-hint="Небольшой отряд (1-1000 войск) (возвращаются)" data-command-type="return" data-command-id="949701618">
+				<img src="https://dsru.innogamescdn.com/8.53/30447/graphic/command/return_attack_small.png" title="" alt="" class="" />
+				</span>
+			
+			<span class="quickedit-out" data-id="949701618" data-ignore-icons="1">
+				<span class="quickedit-content">
+					<a href="/game.php?village=5562&amp;screen=info_command&amp;id=949701618&amp;type=own">
+						<span class="quickedit-label">
+							 Возвращение из деревни Бонусная деревня (439|554) K54
+						</span>
+					</a>
+
+										<a class="rename-icon" href="#" title="Переименовать"></a>
+									</span>
+			</span>
+		</td>
+
+											<td>сегодня в 13:57:23:<span class="grey small">000</span> ч.</td>
+					
+		<td >
+			<span class="timer" data-endtime="1472813843">0:22:23</span>
+					</td>
+	</tr>
+		
+	<tr>
+		<td>
+							<span class="own_command" data-icon-hint="Небольшой отряд (1-1000 войск) (возвращаются)" data-command-type="return" data-command-id="569140703">
+				<img src="https://dsru.innogamescdn.com/8.53/30447/graphic/command/return_attack_small.png" title="" alt="" class="" />
+				</span>
+			
+			<span class="quickedit-out" data-id="569140703" data-ignore-icons="1">
+				<span class="quickedit-content">
+					<a href="/game.php?village=5562&amp;screen=info_command&amp;id=569140703&amp;type=own">
+						<span class="quickedit-label">
+							 Возвращение из деревни Деревня варваров (448|556) K54
+						</span>
+					</a>
+
+										<a class="rename-icon" href="#" title="Переименовать"></a>
+									</span>
+			</span>
+		</td>
+
+											<td>сегодня в 14:00:03:<span class="grey small">000</span> ч.</td>
+					
+		<td >
+			<span class="timer" data-endtime="1472814003">0:25:03</span>
+					</td>
+	</tr>
+		
+	<tr>
+		<td>
+							<span class="own_command" data-icon-hint="Небольшой отряд (1-1000 войск) (возвращаются)" data-command-type="return" data-command-id="344298462">
+				<img src="https://dsru.innogamescdn.com/8.53/30447/graphic/command/return_attack_small.png" title="" alt="" class="" />
+				</span>
+			
+			<span class="quickedit-out" data-id="344298462" data-ignore-icons="1">
+				<span class="quickedit-content">
+					<a href="/game.php?village=5562&amp;screen=info_command&amp;id=344298462&amp;type=own">
+						<span class="quickedit-label">
+							 Возвращение из деревни Здесь живёт xxxbuilderxxx (438|553) K54
+						</span>
+					</a>
+
+										<a class="rename-icon" href="#" title="Переименовать"></a>
+									</span>
+			</span>
+		</td>
+
+											<td>сегодня в 14:05:48:<span class="grey small">000</span> ч.</td>
+					
+		<td >
+			<span class="timer" data-endtime="1472814348">0:30:48</span>
+					</td>
+	</tr>
+		
+	<tr>
+		<td>
+							<span class="own_command" data-icon-hint="Небольшой отряд (1-1000 войск)" data-command-type="attack" data-command-id="1253239755">
+				<img src="https://dsru.innogamescdn.com/8.53/30447/graphic/command/attack_small.png" title="" alt="" class="" />
+				</span>
+			
+			<span class="quickedit-out" data-id="1253239755" data-ignore-icons="1">
+				<span class="quickedit-content">
+					<a href="/game.php?village=5562&amp;screen=info_command&amp;id=1253239755&amp;type=own">
+						<span class="quickedit-label">
+							 Атака на Здесь живёт xxxbuilderxxx (438|553) K54
+						</span>
+					</a>
+
+										<a class="rename-icon" href="#" title="Переименовать"></a>
+									</span>
+			</span>
+		</td>
+
+											<td>сегодня в 14:07:43:<span class="grey small">646</span> ч.</td>
+					
+		<td >
+			<span class="timer" data-endtime="1472814463">0:32:43</span>
+					</td>
+	</tr>
+		
+	<tr>
+		<td>
+							<span class="own_command" data-icon-hint="Небольшой отряд (1-1000 войск) (возвращаются)" data-command-type="return" data-command-id="469554480">
+				<img src="https://dsru.innogamescdn.com/8.53/30447/graphic/command/return_attack_small.png" title="" alt="" class="" />
+				</span>
+			
+			<span class="quickedit-out" data-id="469554480" data-ignore-icons="1">
+				<span class="quickedit-content">
+					<a href="/game.php?village=5562&amp;screen=info_command&amp;id=469554480&amp;type=own">
+						<span class="quickedit-label">
+							 Возвращение из деревни Деревня варваров (454|548) K54
+						</span>
+					</a>
+
+										<a class="rename-icon" href="#" title="Переименовать"></a>
+									</span>
+			</span>
+		</td>
+
+											<td>сегодня в 14:20:14:<span class="grey small">000</span> ч.</td>
+					
+		<td >
+			<span class="timer" data-endtime="1472815214">0:45:14</span>
+					</td>
+	</tr>
+		
+	<tr>
+		<td>
+							<span class="own_command" data-icon-hint="Небольшой отряд (1-1000 войск) (возвращаются)" data-command-type="return" data-command-id="753998619">
+				<img src="https://dsru.innogamescdn.com/8.53/30447/graphic/command/return_attack_small.png" title="" alt="" class="" />
+				</span>
+			
+			<span class="quickedit-out" data-id="753998619" data-ignore-icons="1">
+				<span class="quickedit-content">
+					<a href="/game.php?village=5562&amp;screen=info_command&amp;id=753998619&amp;type=own">
+						<span class="quickedit-label">
+							 Возвращение из деревни Деревня варваров (454|549) K54
+						</span>
+					</a>
+
+										<a class="rename-icon" href="#" title="Переименовать"></a>
+									</span>
+			</span>
+		</td>
+
+											<td>сегодня в 14:22:47:<span class="grey small">000</span> ч.</td>
+					
+		<td >
+			<span class="timer" data-endtime="1472815367">0:47:47</span>
+					</td>
+	</tr>
+		
+	<tr>
+		<td>
+							<span class="own_command" data-icon-hint="Небольшой отряд (1-1000 войск) (возвращаются)" data-command-type="return" data-command-id="2034379063">
+				<img src="https://dsru.innogamescdn.com/8.53/30447/graphic/command/return_attack_small.png" title="" alt="" class="" />
+				</span>
+			
+			<span class="quickedit-out" data-id="2034379063" data-ignore-icons="1">
+				<span class="quickedit-content">
+					<a href="/game.php?village=5562&amp;screen=info_command&amp;id=2034379063&amp;type=own">
+						<span class="quickedit-label">
+							 Возвращение из деревни Деревня варваров (439|555) K54
+						</span>
+					</a>
+
+										<a class="rename-icon" href="#" title="Переименовать"></a>
+									</span>
+			</span>
+		</td>
+
+											<td>сегодня в 14:30:08:<span class="grey small">000</span> ч.</td>
+					
+		<td >
+			<span class="timer" data-endtime="1472815808">0:55:08</span>
+					</td>
+	</tr>
+		
+	<tr>
+		<td>
+							<span class="own_command" data-icon-hint="Небольшой отряд (1-1000 войск) (возвращаются)" data-command-type="return" data-command-id="287313967">
+				<img src="https://dsru.innogamescdn.com/8.53/30447/graphic/command/return_attack_small.png" title="" alt="" class="" />
+				</span>
+			
+			<span class="quickedit-out" data-id="287313967" data-ignore-icons="1">
+				<span class="quickedit-content">
+					<a href="/game.php?village=5562&amp;screen=info_command&amp;id=287313967&amp;type=own">
+						<span class="quickedit-label">
+							 Возвращение из деревни =Valmont= (438|554) K54
+						</span>
+					</a>
+
+										<a class="rename-icon" href="#" title="Переименовать"></a>
+									</span>
+			</span>
+		</td>
+
+											<td>сегодня в 14:33:15:<span class="grey small">000</span> ч.</td>
+					
+		<td >
+			<span class="timer" data-endtime="1472815995">0:58:15</span>
+					</td>
+	</tr>
+		
+	<tr>
+		<td>
+							<span class="own_command" data-icon-hint="Небольшой отряд (1-1000 войск) (возвращаются)" data-command-type="return" data-command-id="1344048746">
+				<img src="https://dsru.innogamescdn.com/8.53/30447/graphic/command/return_attack_small.png" title="" alt="" class="" />
+				</span>
+			
+			<span class="quickedit-out" data-id="1344048746" data-ignore-icons="1">
+				<span class="quickedit-content">
+					<a href="/game.php?village=5562&amp;screen=info_command&amp;id=1344048746&amp;type=own">
+						<span class="quickedit-label">
+							 Возвращение из деревни Здесь живёт andrey sarkke (437|553) K54
+						</span>
+					</a>
+
+										<a class="rename-icon" href="#" title="Переименовать"></a>
+									</span>
+			</span>
+		</td>
+
+											<td>сегодня в 14:42:52:<span class="grey small">000</span> ч.</td>
+					
+		<td >
+			<span class="timer" data-endtime="1472816572">1:07:52</span>
+					</td>
+	</tr>
+		
+	<tr>
+		<td>
+							<span class="own_command" data-icon-hint="Небольшой отряд (1-1000 войск) (возвращаются)" data-command-type="return" data-command-id="467838274">
+				<img src="https://dsru.innogamescdn.com/8.53/30447/graphic/command/return_attack_small.png" title="" alt="" class="" />
+				</span>
+			
+			<span class="quickedit-out" data-id="467838274" data-ignore-icons="1">
+				<span class="quickedit-content">
+					<a href="/game.php?village=5562&amp;screen=info_command&amp;id=467838274&amp;type=own">
+						<span class="quickedit-label">
+							 Возвращение из деревни Деревня варваров (449|557) K54
+						</span>
+					</a>
+
+										<a class="rename-icon" href="#" title="Переименовать"></a>
+									</span>
+			</span>
+		</td>
+
+											<td>сегодня в 14:57:54:<span class="grey small">000</span> ч.</td>
+					
+		<td >
+			<span class="timer" data-endtime="1472817474">1:22:54</span>
+					</td>
+	</tr>
+		
+	<tr>
+		<td>
+							<span class="own_command" data-icon-hint="Небольшой отряд (1-1000 войск) (возвращаются)" data-command-type="return" data-command-id="464006247">
+				<img src="https://dsru.innogamescdn.com/8.53/30447/graphic/command/return_attack_small.png" title="" alt="" class="" />
+				</span>
+			
+			<span class="quickedit-out" data-id="464006247" data-ignore-icons="1">
+				<span class="quickedit-content">
+					<a href="/game.php?village=5562&amp;screen=info_command&amp;id=464006247&amp;type=own">
+						<span class="quickedit-label">
+							 Возвращение из деревни Деревня варваров (449|557) K54
+						</span>
+					</a>
+
+										<a class="rename-icon" href="#" title="Переименовать"></a>
+									</span>
+			</span>
+		</td>
+
+											<td>сегодня в 14:59:27:<span class="grey small">000</span> ч.</td>
+					
+		<td >
+			<span class="timer" data-endtime="1472817567">1:24:27</span>
+					</td>
+	</tr>
+		
+	<tr>
+		<td>
+							<span class="own_command" data-icon-hint="Небольшой отряд (1-1000 войск) (возвращаются)" data-command-type="return" data-command-id="2003104852">
+				<img src="https://dsru.innogamescdn.com/8.53/30447/graphic/command/return_attack_small.png" title="" alt="" class="" />
+				</span>
+			
+			<span class="quickedit-out" data-id="2003104852" data-ignore-icons="1">
+				<span class="quickedit-content">
+					<a href="/game.php?village=5562&amp;screen=info_command&amp;id=2003104852&amp;type=own">
+						<span class="quickedit-label">
+							 Возвращение из деревни Бонусная деревня (455|548) K54
+						</span>
+					</a>
+
+										<a class="rename-icon" href="#" title="Переименовать"></a>
+									</span>
+			</span>
+		</td>
+
+											<td>сегодня в 15:04:41:<span class="grey small">000</span> ч.</td>
+					
+		<td >
+			<span class="timer" data-endtime="1472817881">1:29:41</span>
+					</td>
+	</tr>
+		
+	<tr>
+		<td>
+							<span class="own_command" data-icon-hint="Небольшой отряд (1-1000 войск) (возвращаются)" data-command-type="return" data-command-id="692276959">
+				<img src="https://dsru.innogamescdn.com/8.53/30447/graphic/command/return_attack_small.png" title="" alt="" class="" />
+				</span>
+			
+			<span class="quickedit-out" data-id="692276959" data-ignore-icons="1">
+				<span class="quickedit-content">
+					<a href="/game.php?village=5562&amp;screen=info_command&amp;id=692276959&amp;type=own">
+						<span class="quickedit-label">
+							 Возвращение из деревни Деревня варваров (451|556) K54
+						</span>
+					</a>
+
+										<a class="rename-icon" href="#" title="Переименовать"></a>
+									</span>
+			</span>
+		</td>
+
+											<td>сегодня в 15:04:48:<span class="grey small">000</span> ч.</td>
+					
+		<td >
+			<span class="timer" data-endtime="1472817888">1:29:48</span>
+					</td>
+	</tr>
+		
+	<tr>
+		<td>
+							<span class="own_command" data-icon-hint="Небольшой отряд (1-1000 войск) (возвращаются)" data-command-type="return" data-command-id="570079928">
+				<img src="https://dsru.innogamescdn.com/8.53/30447/graphic/command/return_attack_small.png" title="" alt="" class="" />
+				</span>
+			
+			<span class="quickedit-out" data-id="570079928" data-ignore-icons="1">
+				<span class="quickedit-content">
+					<a href="/game.php?village=5562&amp;screen=info_command&amp;id=570079928&amp;type=own">
+						<span class="quickedit-label">
+							 Возвращение из деревни Деревня варваров (444|538) K54
+						</span>
+					</a>
+
+										<a class="rename-icon" href="#" title="Переименовать"></a>
+									</span>
+			</span>
+		</td>
+
+											<td>сегодня в 15:07:07:<span class="grey small">000</span> ч.</td>
+					
+		<td >
+			<span class="timer" data-endtime="1472818027">1:32:07</span>
+					</td>
+	</tr>
+		
+	<tr>
+		<td>
+							<span class="own_command" data-icon-hint="Небольшой отряд (1-1000 войск) (возвращаются)" data-command-type="return" data-command-id="1192680730">
+				<img src="https://dsru.innogamescdn.com/8.53/30447/graphic/command/return_attack_small.png" title="" alt="" class="" />
+				</span>
+			
+			<span class="quickedit-out" data-id="1192680730" data-ignore-icons="1">
+				<span class="quickedit-content">
+					<a href="/game.php?village=5562&amp;screen=info_command&amp;id=1192680730&amp;type=own">
+						<span class="quickedit-label">
+							 Возвращение из деревни Здесь живёт Irina (447|558) K54
+						</span>
+					</a>
+
+										<a class="rename-icon" href="#" title="Переименовать"></a>
+									</span>
+			</span>
+		</td>
+
+											<td>сегодня в 15:14:42:<span class="grey small">000</span> ч.</td>
+					
+		<td >
+			<span class="timer" data-endtime="1472818482">1:39:42</span>
+					</td>
+	</tr>
+		
+	<tr>
+		<td>
+							<span class="own_command" data-icon-hint="Небольшой отряд (1-1000 войск) (возвращаются)" data-command-type="return" data-command-id="1744008670">
+				<img src="https://dsru.innogamescdn.com/8.53/30447/graphic/command/return_attack_small.png" title="" alt="" class="" />
+				</span>
+			
+			<span class="quickedit-out" data-id="1744008670" data-ignore-icons="1">
+				<span class="quickedit-content">
+					<a href="/game.php?village=5562&amp;screen=info_command&amp;id=1744008670&amp;type=own">
+						<span class="quickedit-label">
+							 Возвращение из деревни Деревня варваров (454|543) K54
+						</span>
+					</a>
+
+										<a class="rename-icon" href="#" title="Переименовать"></a>
+									</span>
+			</span>
+		</td>
+
+											<td>сегодня в 15:18:01:<span class="grey small">000</span> ч.</td>
+					
+		<td >
+			<span class="timer" data-endtime="1472818681">1:43:01</span>
+					</td>
+	</tr>
+		
+	<tr>
+		<td>
+							<span class="own_command" data-icon-hint="Небольшой отряд (1-1000 войск) (возвращаются)" data-command-type="return" data-command-id="1072729048">
+				<img src="https://dsru.innogamescdn.com/8.53/30447/graphic/command/return_attack_small.png" title="" alt="" class="" />
+				</span>
+			
+			<span class="quickedit-out" data-id="1072729048" data-ignore-icons="1">
+				<span class="quickedit-content">
+					<a href="/game.php?village=5562&amp;screen=info_command&amp;id=1072729048&amp;type=own">
+						<span class="quickedit-label">
+							 Возвращение из деревни Деревня варваров (455|551) K54
+						</span>
+					</a>
+
+										<a class="rename-icon" href="#" title="Переименовать"></a>
+									</span>
+			</span>
+		</td>
+
+											<td>сегодня в 15:24:30:<span class="grey small">000</span> ч.</td>
+					
+		<td >
+			<span class="timer" data-endtime="1472819070">1:49:30</span>
+					</td>
+	</tr>
+		
+	<tr>
+		<td>
+							<span class="own_command" data-icon-hint="Небольшой отряд (1-1000 войск) (возвращаются)" data-command-type="return" data-command-id="1805448356">
+				<img src="https://dsru.innogamescdn.com/8.53/30447/graphic/command/return_attack_small.png" title="" alt="" class="" />
+				</span>
+			
+			<span class="quickedit-out" data-id="1805448356" data-ignore-icons="1">
+				<span class="quickedit-content">
+					<a href="/game.php?village=5562&amp;screen=info_command&amp;id=1805448356&amp;type=own">
+						<span class="quickedit-label">
+							 Возвращение из деревни Деревня варваров (453|555) K54
+						</span>
+					</a>
+
+										<a class="rename-icon" href="#" title="Переименовать"></a>
+									</span>
+			</span>
+		</td>
+
+											<td>сегодня в 15:33:17:<span class="grey small">000</span> ч.</td>
+					
+		<td >
+			<span class="timer" data-endtime="1472819597">1:58:17</span>
+					</td>
+	</tr>
+		
+	<tr>
+		<td>
+							<span class="own_command" data-icon-hint="Небольшой отряд (1-1000 войск) (возвращаются)" data-command-type="return" data-command-id="369971349">
+				<img src="https://dsru.innogamescdn.com/8.53/30447/graphic/command/return_attack_small.png" title="" alt="" class="" />
+				</span>
+			
+			<span class="quickedit-out" data-id="369971349" data-ignore-icons="1">
+				<span class="quickedit-content">
+					<a href="/game.php?village=5562&amp;screen=info_command&amp;id=369971349&amp;type=own">
+						<span class="quickedit-label">
+							 Возвращение из деревни Бонусная деревня (449|558) K54
+						</span>
+					</a>
+
+										<a class="rename-icon" href="#" title="Переименовать"></a>
+									</span>
+			</span>
+		</td>
+
+											<td>сегодня в 15:39:34:<span class="grey small">000</span> ч.</td>
+					
+		<td >
+			<span class="timer" data-endtime="1472819974">2:04:34</span>
+					</td>
+	</tr>
+		
+	<tr>
+		<td>
+							<span class="own_command" data-icon-hint="Небольшой отряд (1-1000 войск) (возвращаются)" data-command-type="return" data-command-id="749414715">
+				<img src="https://dsru.innogamescdn.com/8.53/30447/graphic/command/return_attack_small.png" title="" alt="" class="" />
+				</span>
+			
+			<span class="quickedit-out" data-id="749414715" data-ignore-icons="1">
+				<span class="quickedit-content">
+					<a href="/game.php?village=5562&amp;screen=info_command&amp;id=749414715&amp;type=own">
+						<span class="quickedit-label">
+							 Возвращение из деревни Деревня варваров (455|552) K54
+						</span>
+					</a>
+
+										<a class="rename-icon" href="#" title="Переименовать"></a>
+									</span>
+			</span>
+		</td>
+
+											<td>сегодня в 15:39:40:<span class="grey small">000</span> ч.</td>
+					
+		<td >
+			<span class="timer" data-endtime="1472819980">2:04:40</span>
+					</td>
+	</tr>
+		
+	<tr>
+		<td>
+							<span class="own_command" data-icon-hint="Небольшой отряд (1-1000 войск) (возвращаются)" data-command-type="return" data-command-id="1442905035">
+				<img src="https://dsru.innogamescdn.com/8.53/30447/graphic/command/return_attack_small.png" title="" alt="" class="" />
+				</span>
+			
+			<span class="quickedit-out" data-id="1442905035" data-ignore-icons="1">
+				<span class="quickedit-content">
+					<a href="/game.php?village=5562&amp;screen=info_command&amp;id=1442905035&amp;type=own">
+						<span class="quickedit-label">
+							 Возвращение из деревни Деревня варваров (455|544) K54
+						</span>
+					</a>
+
+										<a class="rename-icon" href="#" title="Переименовать"></a>
+									</span>
+			</span>
+		</td>
+
+											<td>сегодня в 15:39:47:<span class="grey small">000</span> ч.</td>
+					
+		<td >
+			<span class="timer" data-endtime="1472819987">2:04:47</span>
+					</td>
+	</tr>
+</table>
+
+<script>
+	$(function(){
+		$('.quickedit-out').QuickEdit( { show_icons: false, url: TribalWars.buildURL('POST', 'info_command', { ajaxaction: 'edit_own_comment', id: '__ID__' } ) } );
+		Command.init();
+	});
+</script>
+	                               		</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<p class="server_info">
+			время сервера: <span id="serverTime">13:35:00</span> <span id="serverDate">02/09/2016</span>
+			<span id="dev_console" style="display: none"><b>|</b> <a href="?screen=74:72:69:62:61:6c:77:61:72:73">developer console</a></span>
+					</p>
+
+	</td>
+	<td class="bg_right" id="SkyScraperAdCell">
+		<div class="bg_right"> </div>
+			</td>
+</tr>
+
+						<tr>
+				<td class="bg_leftborder"> </td>
+				<td></td>
+				<td class="bg_rightborder"> </td>
+			</tr>
+			<tr class="newStyleOnly">
+				<td class="bg_bottomleft">&nbsp;</td>
+				<td class="bg_bottomcenter">&nbsp;</td>
+				<td class="bg_bottomright">&nbsp;</td>
+			</tr>
+						</table><!-- .main_layout -->
+			
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1897727-9']);
+  _gaq.push(['_trackPageview']);
+  _gaq.push(['_gat._anonymizeIp']);
+
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+  })();
+
+</script>
+
+		
+				<div id="world_selection_clicktrap" class="evt-world-selection-toggle">
+		</div>
+		<div id="world_selection_popup">
+			<div class="servers-list-top"></div>
+			<div id="servers-list-block">
+			
+			</div>
+			<div class="servers-list-bottom"></div>
+		</div>
+		
+		<div class="chat-open-buffer"></div>
+
+		<div id="bottom">
+			<div id="chat-wrapper">
+			</div>
+
+			<div id="footer">
+				<a href="#" id="unsupported-browser">
+					<img src="https://dsru.innogamescdn.com/8.53/30447/graphic/error.png" title="" alt="" class="" /> Браузер не поддерживается
+				</a>
+				<div id="linkContainer">
+										<a href="#" class="world_button_active evt-world-selection-toggle">Мир 42</a>
+										<a href="https://forum.voyna-plemyon.ru/index.php" class="footer-link" target="_blank">Форум</a>
+					&nbsp;-&nbsp;
+					<a href="http://help.voyna-plemyon.ru/" class="footer-link" target="_blank">Помощь</a>
+															&nbsp;-&nbsp;
+					<a href="/game.php?village=5562&amp;screen=settings&amp;mode=ticket" class="footer-link" target="_blank">Поддержка</a>
+																&nbsp;-&nbsp;
+						<a href="/game.php?village=5562&amp;screen=settings&amp;mode=ref&amp;source=bottom_menu" class="footer-link">Пригласить друзей</a>
+															&nbsp;-&nbsp;
+					<a href="/game.php?village=5562&amp;screen=memo" class="footer-link">Блокнот</a>
+										                    					&nbsp;-&nbsp;
+					<a href="/game.php?village=5562&amp;screen=&amp;action=logout&amp;h=7e4abfa8" target="_top" class="footer-link">Выйти</a>
+                    				</div>
+			</div>
+		</div>
+		
+
+
+
+<script>
+	$(document).ready(function() {
+        Timing.init(1472812500.1567);
+        TribalWars.initTab('df26bcfc5c');
+
+
+
+			WorldSwitch.init();
+		WorldSwitch.worldsURL = '/game.php?village=5562&screen=api&ajax=world_switch&';
+	
+			HotKeys.init();
+	
+			Connection.connect('ru42.voyna-plemyon.ru', 8080, '4c655c630b21', true);
+	
+			UI.Notification.enabled = true;
+	
+	
+    
+	
+	
+		});
+</script>
+
+
+<div id="side-notification-container"></div>
+<!-- emoji images by Twitter Twemoji -->
+</body>
+</html>
+
